@@ -24,6 +24,7 @@
                 <a class="dropdown-item" href="program.html#demo">Demo Booths</a>
                 <a class="dropdown-item" href="program.html#focus">Focus Demos</a>
                 <a class="dropdown-item" href="http://www.adass.org" target="blank_">ADASS</a>
+                <a class="dropdown-item" href="http://www.adass.org/job.html" target="blank_">ADASS Job Register</a>		
               </div>
             </li>
             <li class="nav-item dropdown">
