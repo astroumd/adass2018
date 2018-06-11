@@ -1,4 +1,8 @@
 #
+# using a git repo with multiple users can be challenging.
+# use group permissions
+# chmod -R g+rws .git/objects
+#
 help:
 	@echo no help
 
