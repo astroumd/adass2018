@@ -63,6 +63,7 @@
                 <a class="dropdown-item" href="events.html#tutorial">ADASS Tutorials</a>
                 <a class="dropdown-item" href="events.html#reception">Welcome Reception</a>
                 <a class="dropdown-item" href="events.html#banquet">Banquet</a>
+		<a class="dropdown-item" href="events.html#other">Other</a>
               </div>
             </li>
             <li class="nav-item dropdown">
