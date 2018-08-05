@@ -2,7 +2,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
 <a href="index.html">
-<img src="images/adass-logo.png" width="50px" height="50px" alt="Astronomical Data Analysis Systems and Software">
+<img src="images/logo250.png" width="50px" height="50px" alt="Astronomical Data Analysis Systems and Software">
 </a>
         <a class="navbar-brand" href="index.html">
 </a>
