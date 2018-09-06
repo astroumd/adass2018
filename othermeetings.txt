@@ -11,6 +11,7 @@ https://mavric.umd.edu/mavric-conference-2018
 6-10 aug: Astro Hack Week 2018 - Leiden
 
 3-7 sep: Astro Informatics - Heidelberg [Kai P.]
+https://astroinformatics2018.h-its.org/
 
 20-29 aug: La Serena School for Data Science: Applied Tools for Data-driven Sciences
 
