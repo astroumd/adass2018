@@ -49,7 +49,7 @@
 <!--
                 <a class="dropdown-item" href="ivoaparticipants.html">IVOA Partipants</a>
 -->
-                <a class="dropdown-item" href="index.html#committees">LOC</a>
+                <a class="dropdown-item" href="loc.html">LOC</a>
                 <a class="dropdown-item" href="index.html#committees">POC</a>
               </div>
             </li>
