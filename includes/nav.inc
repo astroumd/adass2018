@@ -24,7 +24,7 @@
                 <a class="dropdown-item" href="program.html#demo">Demo Booths</a>
                 <a class="dropdown-item" href="program.html#focus">Focus Demos</a>
                 <a class="dropdown-item" href="http://www.adass.org" target="blank_">ADASS</a>
-                <a class="dropdown-item" href="http://www.adass.org/job.html" target="blank_">ADASS Job Register</a>		
+                <a class="dropdown-item" href="http://www.adass.org/job.html" target="blank_">ADASS Job Register</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -35,6 +35,7 @@
                 <a class="dropdown-item" href="index.html#venue">Venue</a>
                 <a class="dropdown-item" href="index.html#travel">Travel</a>
                 <a class="dropdown-item" href="local.html">Local Attractions</a>
+                <a class="dropdown-item" href="http://goo.gl/hsYxNh">Hotel Room Sharing</a>
                 <a class="dropdown-item" href="childcare.html">Child Care</a>
               </div>
             </li>
