@@ -35,6 +35,7 @@
                 <a class="dropdown-item" href="index.html#venue">Venue</a>
                 <a class="dropdown-item" href="index.html#travel">Travel</a>
                 <a class="dropdown-item" href="local.html">Local Attractions</a>
+                <a class="dropdown-item" href="childcare.html">Child Care</a>
               </div>
             </li>
             <li class="nav-item dropdown">
