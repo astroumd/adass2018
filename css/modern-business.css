@@ -27,3 +27,13 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+/* ----------------------------------------------------------------------
+ * Custom css added fro ADASS
+/*----------------------------------------------------------------------*/
+
+mark {
+   background-color: #FFBB33;
+   color: black;
+   font-weight: bold;
+}
