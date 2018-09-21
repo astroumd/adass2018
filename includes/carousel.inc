@@ -8,6 +8,7 @@
           <li data-target="#carouselIndicators" data-slide-to="2"></li>
           <li data-target="#carouselIndicators" data-slide-to="3"></li>
           <li data-target="#carouselIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselIndicators" data-slide-to="5"></li>	  
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
@@ -29,6 +30,10 @@
           <!-- Slide 5 - Set the background image for this slide in the line below -->
           <div class="carousel-item img-fluid">
             <img src="images/MainAdmin_10162012_0386.png" style="max-width:100%; height:auto; margin-top:15px;">
+          </div>
+          <!-- Slide 6 - Set the background image for this slide in the line below -->
+          <div class="carousel-item img-fluid">
+            <img src="images/WeberGarden.JPG" style="max-width:100%; height:auto; margin-top:15px;">
           </div>
         </div><!--/.carousel-inner-->
 
