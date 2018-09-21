@@ -30,6 +30,10 @@
           <div class="carousel-item img-fluid">
             <img src="images/MainAdmin_10162012_0386.png" style="max-width:100%; height:auto; margin-top:15px;">
           </div>
+          <!-- Slide 6 - Set the background image for this slide in the line below -->
+          <div class="carousel-item img-fluid">
+            <img src="images/WeberGarden.JPG" style="max-width:100%; height:auto; margin-top:15px;">
+          </div>
         </div><!--/.carousel-inner-->
 
 <!-- The little left/right arrows to change slide -->
