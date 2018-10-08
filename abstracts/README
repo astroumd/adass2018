@@ -1,0 +1,5 @@
+In order for this directory to work, the adass2018 tree needs to be cloned
+from within the tools directory in https://github.com/astroumd/adass
+
+The python scripts will dump files inside of www/abstracts for review before
+they are committed and pushed for the live website.
