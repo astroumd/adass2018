@@ -37,6 +37,7 @@
                 <a class="dropdown-item" href="local.html">Local Attractions</a>
                 <a class="dropdown-item" href="http://goo.gl/hsYxNh">Hotel Room Sharing</a>
                 <a class="dropdown-item" href="childcare.html">Child Care</a>
+                <a class="dropdown-item" href="shipping.html">Shipping Materials to Hotel</a>
               </div>
             </li>
             <li class="nav-item dropdown">
