@@ -23,6 +23,7 @@
                 <a class="dropdown-item" href="program.html#posters">Posters</a>
                 <a class="dropdown-item" href="program.html#demo">Demo Booths</a>
                 <a class="dropdown-item" href="program.html#focus">Focus Demos</a>
+                <a class="dropdown-item" href="confcode.html" target="blank_">Conference Code Of Ethics</a>
                 <a class="dropdown-item" href="http://www.adass.org" target="blank_">ADASS</a>
                 <a class="dropdown-item" href="http://www.adass.org/job.html" target="blank_">ADASS Job Register</a>
               </div>
@@ -37,6 +38,7 @@
                 <a class="dropdown-item" href="local.html">Local Attractions</a>
                 <a class="dropdown-item" href="http://goo.gl/hsYxNh">Hotel Room Sharing</a>
                 <a class="dropdown-item" href="childcare.html">Child Care</a>
+                <a class="dropdown-item" href="shipping.html">Shipping Materials to Hotel</a>
               </div>
             </li>
             <li class="nav-item dropdown">
