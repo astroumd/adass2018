@@ -1,10 +1,37 @@
 <html> <body>
-<b>P13.18: Ryan, P. Wesley</b>
+<b>P13.18: Shirasaki, Yuji</b>
 <br>
-P. Wesley Ryan (Astrophysics Source Code Library) <br> Alice Allen (Alice Allen) <br>  Peter Teuben (University of Maryland)<br>   <br>   <br>  <br><br>
-<i>Schroedinger’s code: Source code availability and transparency in astrophysics</i>
+Yuji Shirasaki (National Astronomical Observatory of Japan) <br> Christopher Zapart (Christopher Zapart) <br>  Masatoshi Ohishi (National Astronomical Observatory of Japan)<br>  Yoshihiko Mizumoto (National Astronomical Observatory of Japan)<br>   <br>  <br><br>
+<i>VO service in Japan : Registry service based on Apache Solr and SIA v2 service for Japanese Facilities</i>
 <br><br>
-Astronomers use software for their research, but how many of the codes they use are available as source code? We examined a sample of 166 papers from 2015 for clearly identified software use, then searched for source code for the software packages mentioned in these research papers. We categorized the software to indicate whether source code is available for download and whether there are restrictions to accessing it, and if source code was not available, whether some other form of the software, such as a binary, was. Over 40% of the source code for the software used in our sample was not available for download.
+Currently more than 20 thousands of VO services are registered in the
+VO registry database.
+Keyword Search is the most popular way to find a resource.
+There can be a lot of ways to implement this capability, and the performance
+depends on how to index the document describing the resource metadata.
 
-As URLs have often been used as proxy citations for software and data, we also extracted URLs from one journal’s 2015 research articles, removed those from certain long-term reliable domains, and tested the remainder to determine what percentage of these URLs were accessible in September and October, 2017. We repeated this test a year later to determine what percentage of these links were still accessible. This poster will present what we learned about software availability and URL accessibility in astronomy.
+Apache Solr is an open source search platform and uses the Lucene Java
+search library for full-text indexing.
+The document is indexed after the process that removes stop words
+(not adequate for a keyword e.g. a, the, and, is, are ... ) and stems
+a word to a root word (e.g. clustering to cluster).
+Thus for the query of a keyword cluster, the Solr search system will
+return documents that contain a word cluster, clustering, or clustered.
+Solr also can handle single- or multi-token synonyms and abbreviation.
+For an example, SN, supernovae, and SNe are translated to supernova
+in the process of indexing.
+So it increases the probability for a given keyword to hit a desired
+resource metadata.
+In order to incorporate this feature, we upgraded the registry service
+behind the JVO portal to the one based on Solr from XML based DB.
+
+The data from Nobeyama Legacy project were released from the JVO portal
+on 1st June in 2018.
+The data are now distributed also through the most recent VO standard interface
+called SIA-v2.
+The data of ALMA and Subaru telescope are also accessible through the SIA-v2.
+We are now working on distributing the data of Hyper Suprime-Cam SSP/DR1 and 
+also the data of Hitomi satellite under the collaboration with C-SODA/JAXA.
+
+We present those our recent development on Japanese Virtual Observatory system.
 </body> </html>
