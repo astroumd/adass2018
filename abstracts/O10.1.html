@@ -1,0 +1,13 @@
+<html> <body>
+<b>O10.1: Brasseur, Clara</b>
+<br>
+C. E. Brasseur (Space Telescope Science Institute) <br> Rick White (Rick White) <br>  Jonathan Hargis (Space Telescope Science Institute)<br>  Susan Mullally (Space Telescope Science Institute)<br>  Scott Fleming (Space Telescope Science Institute)<br>  Mike Fox - Space Telescope Science Institute
+Arfon Smith - Space Telescope Science Institute<br><br>
+<b>Time: Tue 09.30 - 09.45</b>
+<br>
+<i>AstroCut: A cutout service for TESS full-frame image sets</i>
+<br><br>
+The Transiting Exoplanet Survey Satellite (TESS) launched this past March and will have its first data release near the end of this year. Like that of the Kepler mission, the TESS data pipeline will return a variety of data products, from light curves and target pixel files (TPFs) to large full frame images (FFIs). Unlike Kepler, which took FFIs relatively infrequently, TESS will be taking FFIs every half hour, making them a large and incredibly valuable scientific dataset. As part of the Mikulski Archive for Space Telescope's (MAST) mission to provide high quality access to astronomical datasets, MAST is building an image cutout service for TESS FFI images.  Users can request image cutouts in the form of TESS pipeline compatible TPFs without needing to download the entire set of images (750 GB). For users who wish to have more direct control or who want to cutout every single star in the sky, the cutout software (python package) is publicly available and installable for local use.
+
+In this talk we will present the use and design of this software, in particular how we were able to optimize the cutout step. The main barrier in writing performant TESS FFI cutout software is the number of files that must be opened and read from. To streamline the cutout process we performed a certain amount of one-time work up front, which allows individual cutouts to proceed much more efficiently. The one-time data manipulation work takes an entire sector of FFIs and builds one large (~45 GB) cube file for each camera chip, so that the cutout software need not access several thousand FFIs individually.  Additionally we transpose the image cube, putting time on the short axis, thus minimizing the number of seeks per cutout. By creating these data cubes up front we achieved a significant increase in performance. We will show examples of this tool using the currently available simulated TESS data, and discuss use cases for the first data release. We will finish by discussing future directions for this software, such as generalizing it beyond the TESS mission.
+</body> </html>
