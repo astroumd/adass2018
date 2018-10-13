@@ -1,8 +1,15 @@
 <html> <body>
-<b>P10.6: Dempsey, James</b>
+<b>P10.6: Dowler, Patrick</b>
 <br>
-James Dempsey (CSIRO) <br> Minh Huynh (Minh Huynh) <br>   <br>   <br>   <br>  <br><br>
-<i>Serving large scale survey data for ASKAP with SIA2 and SODA</i>
+Patrick Dowler (National Research Council Canada) <br> María Arévalo (María Arévalo) <br>  Javier Durán (European Space Astronomy Centre)<br>  Daniel Durand (National Research Council Canada)<br>  Séverin Gaudet (National Research Council Canada)<br>  Jonathan Hargis, Brian McLean, Oliver Oberdorf, David Rodriguez (Mikulski Archives for Space Telescopes)
+Brian Major (National Research Council Canada)<br><br>
+<i>Archive-2.0: Metadata and Data Synchronisation between MAST, CADC, and ESAC</i>
 <br><br>
-The Australian SKA Pathfinder (ASKAP) telescope is a survey radio telescope that will produce image cubes of over 1 TB each in size. A key problem is how astronomers will work with these huge files. The CSIRO ASKAP Science Data Archive (CASDA) has taken the approach of allowing astronomers and their scripts to work with parts of the files as well as entire files. Both sub cubes and spectra can be extracted in-place for arbitrary subsets of the cubes. The Server-side Operations for Data Access (SODA) and Simple Image Access v2 (SIA2) virtual observatory protocols provide the foundations of these capabilities. I will review how we implemented these protocols and our planned future work in this area.
+The Canadian Astronomy Data Centre (CADC) and the European Space Astronomy Centre (ESAC) maintain mirrors of and provide user access to the HST data collection. A new mirroring approach was needed to improve consistency and support future missions like JWST. The Common Archive Observation Model (CAOM) is used as the core model for all data holdings at the CADC and the Mikulski Archive for Space Telescopes (MAST) and was extended to support a metadata and data synchronization system that allows the partners to maintain a complete copy of the entire HST collection using metadata and files generated at MAST.
+
+The metadata synchronization process relies on a simple RESTful web service operated by the metadata source (MAST) and a metadata harvesting tool run by the mirror centres (CADC and ESAC). The harvesting tool normally operates in incremental mode (recent changes) to maintain an up-to-date copy of the metadata. Consistency of the metadata is insured through the use of a robust metadata checksum algorithm; a full validation mode can be used to check and fix cases where incremental harvest events or deleted observation events were missed (rare) or source and destination metadata checksums do not match.
+
+We have also developed a new file synchronization tool that leverages CAOM metadata to discover and retrieve files from the source (MAST) to the mirror sites.  Through the use a backend plugins, the CADC and ESAC have extended the file synchronization to interface with their respective site-specific storage systems.. Like the metadata harvesting tool, file synchronization normally operates in incremental mode: it uses local CAOM metadata to discover new or modified files and schedule downloads. A separate mode performs downloads. A validation mode performs a full comparison of files referenced in CAOM with those in the local storage system and (optionally) schedules downloads to fix any discrepancies.
+
+Apart from the common data collection, services and tools described above, partners are allowed to extend CAOM metadata with more information specifically intended to provide added value features. ESAC, for instance, introduced information about publications in their instance of the Archive.
 </body> </html>
