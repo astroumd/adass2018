@@ -1,0 +1,42 @@
+<html> <body>
+<b>F5: Vahi, Karan</b>
+<br>
+Karan Vahi (USC Information Sciences Institute) <br> Mats Rynge (Mats Rynge) <br>   <br>   <br>   <br>  <br><br>
+<b>Time: Wed 10.45 - 11.15</b>
+<br>
+<i>Workflows Management using Pegasus</i>
+<br><br>
+Workflows are a key technology for enabling complex scientific applications. They capture the interdependencies between processing steps in data analysis and simulation pipelines, as well as the mechanisms to execute those steps reliably and efficiently in a distributed computing environment. They also enable scientists to capture complex processes to promote method sharing and reuse and provide provenance information necessary for the verification of scientific results and scientific reproducibility. Application containers such as Docker and Singularity are increasingly becoming a preferred way for bundling user application code with complex dependencies, to be used during workflow execution. The use of application containers ensures the user scientific code is executed in a homogenous environment tailored for application, even when executing on nodes with widely varying architecture, operation systems and system libraries. This demo will focus on how to model scientific analysis as a workflow and execute them on distributed resources using the Pegasus Workflow Management System
+(http://pegasus.isi.edu).
+
+Pegasus is being used in a number of scientific domains doing production grade science. In
+2016 the LIGO gravitational wave experiment used Pegasus to analyze instrumental data
+and confirm the first ever detection of a gravitational wave. The Southern California
+Earthquake Center (SCEC) based at USC, uses a Pegasus managed workflow infrastructure
+called Cybershake to generate hazard maps for the Southern California region. In March
+2017, SCEC conducted a CyberShake study on DOE systems ORNL Titan and NCSA
+BlueWaters to generate the latest maps for the Southern California region. Overall, the study
+required 450,000 node-hours of computation across the two systems. Pegasus is also being
+used in astronomy, bioinformatics, civil engineering, climate modeling, earthquake science,
+molecular dynamics and other complex analyses.
+
+Pegasus allows users to design workflows at a high-level of abstraction, that is independent
+of the resources available to execute them and the location of data and executables. It
+compiles these abstract workflows to executable workflows that can be deployed onto
+distributed and high-performance computing resources such as DOE LCFs like NERSC,
+XSEDE, local clusters, and clouds. During the compilation process, Pegasus WMS does
+data discovery, locating input data files and executables. Data transfer tasks are
+automatically added to the executable workflow. They are responsible for staging in the input
+files to the cluster, and for transferring the generated output files back to a user-specified
+location. In addition to the data transfers tasks, data cleanup (cleanup data that is no longer
+required) and data registration tasks (catalog the output files) are be added to the pipeline.
+For managing user’s data, Pegasus interfaces with a wide variety of backend storage
+systems (with different protocols). It also has variety of reliability mechanisms in-built ranging
+from automatic job retries, workflow-checkpointing to data reuse. Pegasus also performs
+performance optimization as needed. Pegasus provides both a suite of command line tools
+and a web-based dashboard for users to monitor and debug their computations. Over the
+years, Pegasus has also been integrated into higher level domain specific and workflow
+composition tools such as Portals, HUBzero and Wings. We also recently have added
+support for Jupyter notebooks, that allows users to compose and monitor workflows in a
+Jupyter notebook.
+</body> </html>

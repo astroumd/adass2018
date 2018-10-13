@@ -1,0 +1,11 @@
+<html> <body>
+<b>P9.10: Yunfei, Xu</b>
+<br>
+Xu Yunfei (NAOC) <br> Fan Dongwei (Fan Dongwei) <br>  Xu Dong (NAOC)<br>  Cui Chenzhou (NAOC)<br>   <br>  <br><br>
+<i>aLigo/Virgo Gravitational Wave Electromagnetic Counterparts Host Galaxy Candidates Filtering Pipeline</i>
+<br><br>
+An ongoing effort of the emergent field of multi-messenger astronomy is to discover electromagnetic (EM) counterparts of transient gravitational wave (GW) with EM follow-up observation. After each detection of the GW event, aLIGO -Virgo will distribute the GW source sky confidence distribution data to collaborators, with which astronomers can carry out follow-up observations at different wavelengths. However, based on the current observation accuracy, the 90% credible localization area of GW sources cover hundreds of square degrees. This makes the identification of EM counterpart challenging even with wide-field telescopes. 
+Due to the expected gravitational wave event source reside in or near a galaxy, so restricting follow-up observations to galaxies can significantly decrease the required number of pointing, the total integration time and the number of false positives found. Based on this idea, we set up a pipeline to query the GLADE catalogue based on the position error range and distance range of GW events published by aLIGO / Virgo, and sort the results according to their confidence of the locations, b band brightness, (metering) redshift to quickly screen out the galactic host candidates. The system realizes a series of automatic operations, such as analyzing GW alarm, extracting GW position data, querying catalog, filtering and sorting of host galaxy candidates, and notifying, etc. The whole process does not need manual intervention.
+By building the index of the GLADE catalog based on the HEALPix celestial sphere partitioning method, combining with the MOC query method based on the GW position data, the fast search of the host galaxy candidates was realized, one query and sort task’s time consumption is less than 10s.
+The overall pipeline is highly efficient and can perform a series of operations for data visualization, host galaxy candidates filtering, and observation list report within 5 minutes after receiving a GW event alert.
+</body> </html>

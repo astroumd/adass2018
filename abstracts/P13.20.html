@@ -1,0 +1,37 @@
+<html> <body>
+<b>P13.20: Shirasaki, Yuji</b>
+<br>
+Yuji Shirasaki (National Astronomical Observatory of Japan) <br> Christopher Zapart (Christopher Zapart) <br>  Masatoshi Ohishi (National Astronomical Observatory of Japan)<br>  Yoshihiko Mizumoto (National Astronomical Observatory of Japan)<br>   <br>  <br><br>
+<i>VO service in Japan : Registry service based on Apache Solr and SIA v2 service for Japanese Facilities</i>
+<br><br>
+Currently more than 20 thousands of VO services are registered in the
+VO registry database.
+Keyword Search is the most popular way to find a resource.
+There can be a lot of ways to implement this capability, and the performance
+depends on how to index the document describing the resource metadata.
+
+Apache Solr is an open source search platform and uses the Lucene Java
+search library for full-text indexing.
+The document is indexed after the process that removes stop words
+(not adequate for a keyword e.g. a, the, and, is, are ... ) and stems
+a word to a root word (e.g. clustering to cluster).
+Thus for the query of a keyword cluster, the Solr search system will
+return documents that contain a word cluster, clustering, or clustered.
+Solr also can handle single- or multi-token synonyms and abbreviation.
+For an example, SN, supernovae, and SNe are translated to supernova
+in the process of indexing.
+So it increases the probability for a given keyword to hit a desired
+resource metadata.
+In order to incorporate this feature, we upgraded the registry service
+behind the JVO portal to the one based on Solr from XML based DB.
+
+The data from Nobeyama Legacy project were released from the JVO portal
+on 1st June in 2018.
+The data are now distributed also through the most recent VO standard interface
+called SIA-v2.
+The data of ALMA and Subaru telescope are also accessible through the SIA-v2.
+We are now working on distributing the data of Hyper Suprime-Cam SSP/DR1 and 
+also the data of Hitomi satellite under the collaboration with C-SODA/JAXA.
+
+We present those our recent development on Japanese Virtual Observatory system.
+</body> </html>
