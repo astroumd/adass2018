@@ -1,0 +1,12 @@
+<html> <body>
+<b>P10.7: Lemson, Gerard</b>
+<br>
+Gerard Lemson (JHU) <br>   <br>   <br>   <br>   <br>  <br><br>
+<i>FileDB, a pattern for querying cosmological simulations</i>
+<br><br>
+Cosmological simulations these days consist of 100s of billions of particles and 100s of snapshots. Summary data products derived from these data sets such as cluster catalogues are now frequently stored in large, publically accessible relational databases. But there is an increasing demand for access to the raw simulation data, which however are generally too large and less suited for a purely relational treatment.
+I will present FileDB, a system for querying such simulations from within a relational database, without requiring the ingestion of the raw data into the database itself. FileDB uses a special organization of the simulation snapshots along space filling curves to achieve efficient support for the main, spatial query patterns.  We have created for this purpose a query library inside SQL Server that calculates the overlap between 3D query volumes and these curves to derive efficient retrieval patterns of the required data. This library is callable in SQL though user defined functions, and has been ported to Java for use in Oracle for example.
+We have implemented FileDB on the Millennium database and other simulations accessible in the online SciServer/CasJobs query service. As example I will show SQL queries joining the raw data to the halo catalogues stored in the database to determine density profiles. 
+The fact that FileDB leaves the files in their original form means they can also be accessed directly on the file system. This is particularly useful for global analysis of the files, for which databases could be a bottle neck. I will show examples how SciServer/Compute provides access to these same simulations from within Jupyter notebooks running server side in Docker containers that have the data volumes directly mounted. 
+Finally, the FileDB pattern easily translates to other domains such ocean circulation models, allowing the creation of multi-petabyte database in a cheap and efficient manner.
+</body> </html>

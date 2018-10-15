@@ -1,0 +1,16 @@
+<html> <body>
+<b>P6.1: Blanco-Cuaresma, Sergi</b>
+<br>
+Sergi Blanco-Cuaresma (Harvard-Smithsonian Center for Astrophysics) <br> Alberto Accomazzi (Harvard-Smithsonian Center for Astrophysics) <br>  Michael J. Kurtz (Harvard-Smithsonian Center for Astrophysics)<br>  Edwin Henneken (Harvard-Smithsonian Center for Astrophysics)<br>  Carolyn S. Grant (Harvard-Smithsonian Center for Astrophysics)<br>  Donna M. Thompson,
+Roman Chyla,
+Steven McDonald,
+Golnaz Shapurian,
+Timothy W. Hostetler,
+Matthew R. Templeton,
+Kelly E. Lockhart.
+
+Affiliation: Harvard-Smithsonian Center for Astrophysics<br><br>
+<i>Fundamentals of effective cloud management for the new NASA Astrophysics Data System</i>
+<br><br>
+The new NASA Astrophysics Data System (ADS) is designed as a service-oriented architecture (SOA) that consists of multiple customized Apache Solr search engine instances plus a collection of microservices, containerized using Docker, and deployed in Amazon Web Services (AWS). For complex systems, like the ADS, the loosely coupled architecture can lead to a more scalable, reliable and resilient system if some fundamental questions are addressed. After having experimented with different AWS environments and deployment methods, we decided in December 2017 to go with Kubernetes for our container orchestration. Defining the best strategy to properly set-up Kubernetes has shown to be challenging: automatic scaling services and load balancing traffic can lead to errors whose origin is difficult to identify, monitoring and logging the activity that happens across multiple layers for a single request needs to be carefully addressed, and the best workflow for a Continuous Integration and Delivery (CI/CD) system is not self-evident. This raises several fundamental questions: how do you update your service when there is a new release of a microservice? How do you troubleshoot issues, when requests follow a complex path through the architecture? We have been using Kubernetes for almost a year now, both in our development and production environments. This poster highlights some of our findings.
+</body> </html>
