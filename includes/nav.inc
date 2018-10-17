@@ -12,19 +12,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               About
-              </a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownAbout">
                 <a class="dropdown-item" href="index.html#themes">Key Themes</a>
                 <a class="dropdown-item" href="index.html#dates">Key Dates</a>
                 <a class="dropdown-item" href="program.html">Program</a>
+<!--
                 <a class="dropdown-item" href="program.html#abstracts">Abstract Book</a>
                 <a class="dropdown-item" href="program.html#posters">Posters</a>
                 <a class="dropdown-item" href="program.html#demo">Demo Booths</a>
                 <a class="dropdown-item" href="program.html#focus">Focus Demos</a>
+-->
                 <a class="dropdown-item" href="confcode.html" target="blank_">Conference Code Of Ethics</a>
-                <a class="dropdown-item" href="http://www.adass.org" target="blank_">ADASS</a>
+                <a class="dropdown-item" href="http://www.adass.org" target="blank_">ADASS.org</a>
                 <a class="dropdown-item" href="http://www.adass.org/job.html" target="blank_">ADASS Job Register</a>
               </div>
             </li>
