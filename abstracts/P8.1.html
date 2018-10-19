@@ -4,7 +4,9 @@ Prev: <A HREF=O8.2.html>O8.2</A> Next: <A HREF=P8.2.html>P8.2</A> <br><br>
 <br>
 Karel Adamek (University of Oxford, Department of Engineering Science, Oxford e-Research Centre) <br> Wesley Armour (University of Oxford, Department of Engineering Science, Oxford e-Research Centre) <br>   <br>   <br>   <br>  <br><br>
 <br>
-<i>A GPU implementation of the harmonic sum algorithm</i>
+<b>Theme:</b>  Time Domain Astronomy
+<br>
+<b>Title:</b> <i>A GPU implementation of the harmonic sum algorithm</i>
 <br><br>
 Detecting pulsars in time-domain radio astronomy using Fourier transform based techniques is a convenient and computationally efficient way to extract the faint single pulses from the noise in which they sit. However this technique, called periodicity searching, has some pitfalls. One of these is that the power contained in pulsar signal is spread into multiple harmonics in calculated power spectra. The incoherent harmonic sum algorithm is one way to rectify this. The algorithm sums the power that is spread across multiple harmonics back into a single fourier bin. This increases signal-to-noise ratio of detected pulsars and allows us to detect weaker pulsars as a result. Harmonic summing also forms part of search techniques used for detecting accelerated pulsars where a two-dimensional harmonic sum is required. Or in more complex cases such as for pulsars with elliptical orbits where a three-dimensional harmonic sum might be necessary. However porting the harmonic sum to many-core architectures like GPUs is not straightforward. The main problem that must be overcome is the very unfavourable memory access pattern, which gets worse as the dimensionality of the harmonic sum increases. We present a set of algorithms for calculating the harmonic sum that are more suited to many-core architectures such as GPUs. We present an evaluation of the sensitivity of these different approaches, the performance and discuss GPU portability.
 </body> </html>
