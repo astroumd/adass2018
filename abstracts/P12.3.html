@@ -1,7 +1,9 @@
 <html> <body>
+Prev: <A HREF=P12.2.html>P12.2</A> Next: <A HREF=P12.4.html>P12.4</A> <br><br>
 <b>P12.3: Fan, Dongwei</b>
 <br>
 Dongwei Fan (National Astronomical Observatories, Chinese Academy of Sciences) <br>   <br>   <br>   <br>   <br>  <br><br>
+<br>
 <i>A simple survey for cross-matching method</i>
 <br><br>
 In order to find a practicable method to build an online cross-matching service, we test several index and search methods. Indexing methods includes the directly matching, HEALPix based matching and zones algorithm. Sorted list and several search trees are also be inspected, e.g., Binary Search Tree, Red-Black Tree, B-Tree. From this survey, we can see that HEALPix based Binary Search on sorted array is the fastest and simple way to cross-match in memory, and the environment is easy to be restored from hardisk. If there are two unsorted catalog on disk, a red-black balance tree with HEALPix indices would be a good choice. But when the catalog is too big to cache in memory, the memory-hardisk-swapping much slows down the efficiency. The key is keeping more points in the memory and do the Binary Search. Not only the speed to cross-match, how to efficiently exporting the rest data columns in catalogs are also be considered. A cross-match web service build on these method is released.

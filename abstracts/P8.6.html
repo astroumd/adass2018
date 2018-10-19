@@ -1,7 +1,9 @@
 <html> <body>
+Prev: <A HREF=P8.5.html>P8.5</A> Next: <A HREF=I9.1.html>I9.1</A> <br><br>
 <b>P8.6: Shin, Min-Su</b>
 <br>
 Min-Su Shin (Korea Astronomy and Space Science Institute) <br>   <br>   <br>   <br>   <br>  <br><br>
+<br>
 <i>Applications of the in-memory database Redis in processing transient event alerts</i>
 <br><br>
 We present results of using the in-memory database Redis in processing transient event alerts. The Redis works in two different ways for processing alerts. First, the publication-subscription model in the Redis allows us to adopt it as a message delivery system for multiple local alert clients. Second, we use the features of indexing and storing geolocation information in the Redis to enable low-latency matching of transient locations with custom catalogs. The current system collects event alerts by using VOEvent streams and detecting changes in web pages/feeds. We also introduce our efforts of migrating the system from the Redis message delivery environment to the NATS-based message processing configuration as well as application of Uber's H3 spatial indexing model instead of the Redis geolocation support.
