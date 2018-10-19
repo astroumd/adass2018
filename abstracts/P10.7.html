@@ -4,7 +4,9 @@ Prev: <A HREF=P10.6.html>P10.6</A> Next: <A HREF=P10.8.html>P10.8</A> <br><br>
 <br>
 Gerard Lemson (JHU) <br>   <br>   <br>   <br>   <br>  <br><br>
 <br>
-<i>FileDB, a pattern for querying cosmological simulations</i>
+<b>Theme:</b>  Databases and Archives: Challenges and Solutions in the Big Data Era
+<br>
+<b>Title:</b> <i>FileDB, a pattern for querying cosmological simulations</i>
 <br><br>
 Cosmological simulations these days consist of 100s of billions of particles and 100s of snapshots. Summary data products derived from these data sets such as cluster catalogues are now frequently stored in large, publically accessible relational databases. But there is an increasing demand for access to the raw simulation data, which however are generally too large and less suited for a purely relational treatment.
 I will present FileDB, a system for querying such simulations from within a relational database, without requiring the ingestion of the raw data into the database itself. FileDB uses a special organization of the simulation snapshots along space filling curves to achieve efficient support for the main, spatial query patterns.  We have created for this purpose a query library inside SQL Server that calculates the overlap between 3D query volumes and these curves to derive efficient retrieval patterns of the required data. This library is callable in SQL though user defined functions, and has been ported to Java for use in Oracle for example.
