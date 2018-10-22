@@ -1,12 +1,20 @@
 <html> <body>
 Prev: <A HREF=P1.7.html>P1.7</A> Next: <A HREF=P1.9.html>P1.9</A> <br><br>
-<b>P1.8: Li, Changhua</b>
+<b>P1.8: Martin, Thomas</b>
 <br>
-Changhua Li (National Astronomical Observatories, Chinese Academy of Sciences) <br> Chenzhou Cui (National Astronomical Observatories, Chinese Academy of Sciences) <br>   <br>   <br>   <br>  <br><br>
+Thomas Martin (Université Laval) <br> Laurent Drissen (Université Laval) <br>   <br>   <br>   <br>  <br><br>
 <br>
 <b>Theme:</b>  Machine Learning in Astronomy
 <br>
-<b>Title:</b> <i>Design of KNN Star-QSO Classification Algorithm Based on Cloud Computing</i>
+<b>Title:</b> <i>Putting more intelligence into the reduction and analysis of SITELLE data.</i>
 <br><br>
-KNN classification algorithm is a mature and simple machine learning algorithm, which is widely used in astronomical spectral classification. However, with the increasing sample size, the traditional KNN algorithm can’t meet the requirements of performance. Based on the cloud computing environment of China Virtual Observatory, the KNN algorithm is optimized based on SPARK + HDFS architecture. Through Map/Reduce, the large samples are segmented and distributed on different SPARK computing nodes, and the obvious acceleration effect is achieved. By comparing with the python-ML general algorithm, KNN's computation time can be reduced by nearly 20 times in a large scale samples
+SITELLE is the imaging Fourier transform spectrometer of the Canada-France-Hawaii Telescope (CFHT). It delivers cubes of 4 million spectra at moderate resolution (R~3000 - 10000) on a 11'x11' FOV with a spatial resolution of 0.32. 
+
+Each data cube contains up to 34 Go of data and a handful of different astrophysical objects which cannot all be detected easily (especially at low signal-to-noise ratio) : high-redshift galaxies, planetary nebulae, emission-line stars, compact hii regions, etc. Object detection and classification is a challenge. We have developed tools based on convolutional neural networks that greatly help reasearcher to quickly find the most hidden objects.
+
+Data reduction have also been enhanced with deep neural networks for cosmic ray detection and stars detection.
+
+Finally, spectral model fitting can also take advantage of the python library Tensor Flow which provides GPU optimized minimization algorithm.
+
+We will also see more of the marvelous data obtained recently.
 </body> </html>
