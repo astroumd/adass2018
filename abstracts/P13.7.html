@@ -1,5 +1,40 @@
-<html> <body>
-Prev: <A HREF=P13.6.html>P13.6</A> Next: <A HREF=P13.8.html>P13.8</A> <br><br>
+<!-- generic header for adass web pages -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ADASS 2018 | Abstracts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <!--#include virtual="/includes/nav_p.inc"-->
+
+        <!-- Page Content -->
+        <div class="container">
+        <br>
+        <div id="poster">
+        <h2 style="padding-top: 80px; margin-top: -80px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+        Abstracts
+        </li>    
+        </ol>
+        </h2>
+Prev: <a href="/abstracts/P13.6.html">P13.6</a> Next: <a href="/abstracts/P13.8.html">P13.8</a> <br><br>
 <b>P13.7: Jenness, Tim</b>
 <br>
 Tim Jenness (LSST/AURA) <br> Jim Bosch (Princeton) <br>  Pim Schellart (Princeton)<br>  K-T Lim (SLAC)<br>  Andy Salnikov (SLAC)<br>  Michelle Gower (NCSA)<br><br>
@@ -7,8 +42,19 @@ Tim Jenness (LSST/AURA) <br> Jim Bosch (Princeton) <br>  Pim Schellart (Princeto
 <b>Theme:</b>  Other
 <br>
 <b>Title:</b> <i>Abstracting the storage and retrieval of image data at the LSST</i>
-<br><br>
+<br><p>
 Writing generic data processing pipelines requires that the algorithmic code does not ever have to know about data formats of files, or the locations of those files.  At LSST we have a software system known as the Butler, that abstracts these details from the software developer.  Scientists can specify the dataset they want in terms they understand, such as filter, observation id, date of observation, and instrument name, and the butler translates that to one or more files which are read and returned to them as a single Python object. Conversely, once they have finished processing the dataset they can give it back to the butler, with a label describing its new status, and the butler can write it in whatever format it has been configured to use.
 
-The butler system is not LSST-specific and is entirely driven by external configuration to suit a specific use case. In this poster we describe the core features of the butler and the associated architecture.
-</body> </html>
+The butler system is not LSST-specific and is entirely driven by external configuration to suit a specific use case. In this poster we describe the core features of the butler and the associated architecture.</p>
+</div><!-- id -->
+<!--#include virtual="/includes/footer.inc" -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
+
+                                                            
