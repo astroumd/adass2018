@@ -1,41 +1,20 @@
 <html> <body>
 Prev: <A HREF=P13.17.html>P13.17</A> Next: <A HREF=P13.19.html>P13.19</A> <br><br>
-<b>P13.18: Shirasaki, Yuji</b>
+<b>P13.18: Solar, Martin</b>
 <br>
-Yuji Shirasaki (National Astronomical Observatory of Japan) <br> Christopher Zapart (National Astronomical Observatory of Japan) <br>  Masatoshi Ohishi (National Astronomical Observatory of Japan)<br>  Yoshihiko Mizumoto (National Astronomical Observatory of Japan)<br>   <br>  <br><br>
+Martin Solar (Universidad Andres Bello (UNAB)) <br> Patricia Tissera (Universidad Andres Bello (UNAB)) <br>   <br>   <br>   <br>  <br><br>
 <br>
 <b>Theme:</b>  Other
 <br>
-<b>Title:</b> <i>VO service in Japan : Registry service based on Apache Solr and SIA v2 service for Japanese Facilities</i>
+<b>Title:</b> <i>Azimuthal variation of oxygen abundance in galactic stellar discs of the EAGLE simulations</i>
 <br><br>
-Currently more than 20 thousands of VO services are registered in the
-VO registry database.
-Keyword Search is the most popular way to find a resource.
-There can be a lot of ways to implement this capability, and the performance
-depends on how to index the document describing the resource metadata.
+Context: The spatial distribution of oxygen abundance in galactic stellar discs is decisive to understand how efficiently metals that are synthesized in massive stars can be redistribute across the galaxy and this provide information about disc assembly, star formation processes and chemical evolution.
 
-Apache Solr is an open source search platform and uses the Lucene Java
-search library for full-text indexing.
-The document is indexed after the process that removes stop words
-(not adequate for a keyword e.g. a, the, and, is, are ... ) and stems
-a word to a root word (e.g. clustering to cluster).
-Thus for the query of a keyword cluster, the Solr search system will
-return documents that contain a word cluster, clustering, or clustered.
-Solr also can handle single- or multi-token synonyms and abbreviation.
-For an example, SN, supernovae, and SNe are translated to supernova
-in the process of indexing.
-So it increases the probability for a given keyword to hit a desired
-resource metadata.
-In order to incorporate this feature, we upgraded the registry service
-behind the JVO portal to the one based on Solr from XML based DB.
+Aims: We study the azimuthal variations of the metallicity gradients (slopes and zero points) and confronted with the gradients obtained by performing azimuthal averages.
 
-The data from Nobeyama Legacy project were released from the JVO portal
-on 1st June in 2018.
-The data are now distributed also through the most recent VO standard interface
-called SIA-v2.
-The data of ALMA and Subaru telescope are also accessible through the SIA-v2.
-We are now working on distributing the data of Hyper Suprime-Cam SSP/DR1 and 
-also the data of Hitomi satellite under the collaboration with C-SODA/JAXA.
+Methods: To get dispersions of metallicity gradients in the galactic stellar discs, there is necessary to divide the galactic plane in 6 sub-regions. To these 6 sub-regions the metallicity gradient is obtained, which is important to get the median and standard deviation of the slope and the zero point, this will be the transcendental variables. The data analysis es based on the EAGLE simulations.
 
-We present those our recent development on Japanese Virtual Observatory system.
+Results: We get 3 groups of galaxies, separated by his standard deviation of the slope of the metallicity gradient; those with low, medium and high dispersion. From low to high standard deviation of the slope, the galaxies show a tendence to be more massive, with more number of particles and a higher value of the radius at half mass (all for young stellar populations).
+
+Conclusions: We find that there is a dispersion in the metallicity profiles depending on the direction chose to estimate them. The preliminary analysis of the dispersions suggest that there is a dependen on morphology: well-defined discs have less dispersion. They also have larger sSFR, hence, thery are more actively forming stars. There is no clear correlation with the total stellar mass (including the bulge). Next steps will be focused on improving this analysis and comparing with available observations.
 </body> </html>

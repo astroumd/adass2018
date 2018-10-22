@@ -1,12 +1,23 @@
 <html> <body>
 Prev: <A HREF=P13.12.html>P13.12</A> Next: <A HREF=P13.14.html>P13.14</A> <br><br>
-<b>P13.13: Patterson, Gerald</b>
+<b>P13.13: Pineau, Francois-Xavier</b>
 <br>
-Wes Patterson (Johns Hopkins University Applied Physics Laboratory) <br> Elizabeth Turtle (Johns Hopkins University Applied Physics Laboratory) <br>  Alfred McEwen (University of Arizona)<br>  Randolph Kirk (United States Geological Survey)<br>  Carolyn Ernst (Johns Hopkins University Applied Physics Laboratory)<br>  <br><br>
+Pineau (Université de Strasbourg, CNRS, Observatoire astronomique de Strasbourg, UMR 7550, F-67000 Strasbour) <br> Fernique (Université de Strasbourg, CNRS, Observatoire astronomique de Strasbourg, UMR 7550, F-67000 Strasbour) <br>  Boch (Université de Strasbourg, CNRS, Observatoire astronomique de Strasbourg, UMR 7550, F-67000 Strasbour)<br>   <br>   <br>  <br><br>
 <br>
 <b>Theme:</b>  Other
 <br>
-<b>Title:</b> <i>Anticipated Data Products from the Europa Imaging System (EIS) on Europa Clipper</i>
+<b>Title:</b> <i>The CDS HEALPix library</i>
 <br><br>
-EIS consists of wide-angle (WAC) and narrow-angle (NAC) cameras, and each can operate either in pushbroom mode with up to 6 colors (plus clear) or in framing mode in the clear bandpass.  The NAC has a 2-axis gimbal that can point +/- 30 degrees from nadir.  The Europa Clipper mission will include over 40 close flybys of Europa with varying geometries, leading to a variety of image products.  Standard (pipeline) data products will include raw data, calibrated and map-projected products, a suite of mosaics, and Digital Terrain Models (DTMs).   Map-projected products will have up to 7 co-registered images in clear and 6 color bandpasses.  Special challenges include removal of geometric distortions due to spacecraft pointing jitter, photometric normalization,  and stray light corrections to best search for and study potential cryo-volcanic plumes.  Advanced data products will include a global mosaic at 50 m/pixel, global color mosaic at 300 m/pixel, regional mosaics at 10-50 m/pixel, a global map of bolometric hemispheric albedo for thermal studies, geodesy datasets to measure Europa’s orbital libration, limb fits for global shape to constrain ice shell properties, change detection sequences to discover current activity, and co-registered products with other Europa Clipper remote sensing data (UV, near-IR, thermal-IR, radar altimetry and sounding).   Both cameras can acquire stereo images and we will produce DTMs of selected areas, including along each nadir illuminated ground-track with the WAC, to characterize clutter in radar sounding profiles.  The highest-resolution images will be greater than or equal to 0.5 m/pixel scale, sufficient to evaluate candidate landing site for a future landed mission.  Public outreach products will include full-disk color images, stereo anaglyphs, and color and high-resolution flyover movies.
+The CDS is releasing a new HEALPix library implemented in Java.  
+Before possibly porting it in C, we are experimenting with the Rust programming language. It allows the library to be compiled into WebAssembly or native code, and thus to easily plug it into web browsers, Python codes or PostgreSQL, to name but a few.
+The library is distributed under the 3-clause BSD licence.
+It focuses on our own needs, on performances and accuracy.
+
+
+We are investigating the potential usage of the WebAssembly version into Aladin Lite. The objective is twofold: supporting deeper orders (up to 24, the present limit being 13), and changing the current GPL license to a less restrictive one.
+Aladin desktop has already started to resort to the Java version.
+
+
+Unlike the ``official'' library, coming from the cosmology community, our Java version do not currently supports Spherical Fourier Transformations and do not support the RING scheme (also it is able to transform cells numbers from the nested scheme to the ring scheme and vice-versa).
+In return, it do support additional features like: distinguishing between cells partially and fully overlapped by a cone; exact cells-overlapped-by-cone solution; very-fast approximate cells-overlapped-by-cone function dedicated to cross-matches; supporting self-intersecting polygons of any size; fast ordered list of small cells surrounding a larger cell; MOC support in cells-overlapped-by-cone queries; BMOC support (MOC storing an additional flag for each cell); etc.
 </body> </html>
