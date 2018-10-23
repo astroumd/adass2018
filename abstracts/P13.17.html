@@ -1,12 +1,87 @@
-<html> <body>
-Prev: <A HREF=P13.16.html>P13.16</A> Next: <A HREF=P13.18.html>P13.18</A> <br><br>
-<b>P13.17: Shipman, Russell</b>
+<!-- generic header for adass web pages -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ADASS 2018 | Abstracts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <!--#include virtual="/includes/nav_p.inc"-->
+
+        <!-- Page Content -->
+        <div class="container">
+        <br>
+        <div id="poster">
+        <h2 style="padding-top: 80px; margin-top: -80px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+        Abstracts
+        </li>    
+        </ol>
+        </h2>
+Prev: <a href="/abstracts/P13.16.html">P13.16</a> Next: <a href="/abstracts/P13.18.html">P13.18</a> <br><br>
+<b>P13.17: Shirasaki, Yuji</b>
 <br>
-R.F. Shipman (SRON) <br> Y.M. Seo (JPL Caltech) <br>  V. Tolls (Harvard Smithsonian Center for Astrophysics)<br>  P.F. Goldsmith (JPL Caltech)<br>  C. Kulesa (University of Arizona)<br>  <br><br>
+Yuji Shirasaki (National Astronomical Observatory of Japan) <br> Christopher Zapart (National Astronomical Observatory of Japan) <br>  Masatoshi Ohishi (National Astronomical Observatory of Japan)<br>  Yoshihiko Mizumoto (National Astronomical Observatory of Japan)<br>   <br>  <br><br>
 <br>
 <b>Theme:</b>  Other
 <br>
-<b>Title:</b> <i>Pipeline Processing of Stratospheric Terahertz Observatory (STO-2) Galactic Plane Survey</i>
-<br><br>
-The Stratospheric Terahertz Observatory is a balloon born experiment which observed 2.5 deg2 of the Galactic Plane in the [CII] 158 micron transition.  We describe the STO-2 data processing and data products as well as the challenges present with these data.
-</body> </html>
+<b>Title:</b> <i>VO service in Japan : Registry service based on Apache Solr and SIA v2 service for Japanese Facilities</i>
+<br><p>
+Currently more than 20 thousands of VO services are registered in the
+VO registry database.
+Keyword Search is the most popular way to find a resource.
+There can be a lot of ways to implement this capability, and the performance
+depends on how to index the document describing the resource metadata.
+
+Apache Solr is an open source search platform and uses the Lucene Java
+search library for full-text indexing.
+The document is indexed after the process that removes stop words
+(not adequate for a keyword e.g. a, the, and, is, are ... ) and stems
+a word to a root word (e.g. clustering to cluster).
+Thus for the query of a keyword cluster, the Solr search system will
+return documents that contain a word cluster, clustering, or clustered.
+Solr also can handle single- or multi-token synonyms and abbreviation.
+For an example, SN, supernovae, and SNe are translated to supernova
+in the process of indexing.
+So it increases the probability for a given keyword to hit a desired
+resource metadata.
+In order to incorporate this feature, we upgraded the registry service
+behind the JVO portal to the one based on Solr from XML based DB.
+
+The data from Nobeyama Legacy project were released from the JVO portal
+on 1st June in 2018.
+The data are now distributed also through the most recent VO standard interface
+called SIA-v2.
+The data of ALMA and Subaru telescope are also accessible through the SIA-v2.
+We are now working on distributing the data of Hyper Suprime-Cam SSP/DR1 and 
+also the data of Hitomi satellite under the collaboration with C-SODA/JAXA.
+
+We present those our recent development on Japanese Virtual Observatory system.</p>
+</div><!-- id -->
+<!--#include virtual="/includes/footer.inc" -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
+
+                                                            
