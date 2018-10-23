@@ -1,5 +1,40 @@
-<html> <body>
-Prev: <A HREF=P10.4.html>P10.4</A> Next: <A HREF=P10.6.html>P10.6</A> <br><br>
+<!-- generic header for adass web pages -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ADASS 2018 | Abstracts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <!--#include virtual="/includes/nav_p.inc"-->
+
+        <!-- Page Content -->
+        <div class="container">
+        <br>
+        <div id="poster">
+        <h2 style="padding-top: 80px; margin-top: -80px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+        Abstracts
+        </li>    
+        </ol>
+        </h2>
+Prev: <a href="/abstracts/P6.5.html">P6.5</a> Next: <a href="/abstracts/P1.2.html">P1.2</a> <br><br>
 <b>P10.5: Dowler, Patrick</b>
 <br>
 Patrick Dowler (National Research Council Canada) <br> María Arévalo (European Space Astronomy Centre) <br>  Javier Durán (European Space Astronomy Centre)<br>  Daniel Durand (National Research Council Canada)<br>  Séverin Gaudet (National Research Council Canada)<br>  Jonathan Hargis, Brian McLean, Oliver Oberdorf, David Rodriguez (Mikulski Archives for Space Telescopes)
@@ -8,12 +43,23 @@ Brian Major (National Research Council Canada)<br><br>
 <b>Theme:</b>  Databases and Archives: Challenges and Solutions in the Big Data Era
 <br>
 <b>Title:</b> <i>Archive-2.0: Metadata and Data Synchronisation between MAST, CADC, and ESAC</i>
-<br><br>
+<br><p>
 The Canadian Astronomy Data Centre (CADC) and the European Space Astronomy Centre (ESAC) maintain mirrors of and provide user access to the HST data collection. A new mirroring approach was needed to improve consistency and support future missions like JWST. The Common Archive Observation Model (CAOM) is used as the core model for all data holdings at the CADC and the Mikulski Archive for Space Telescopes (MAST) and was extended to support a metadata and data synchronization system that allows the partners to maintain a complete copy of the entire HST collection using metadata and files generated at MAST.
 
 The metadata synchronization process relies on a simple RESTful web service operated by the metadata source (MAST) and a metadata harvesting tool run by the mirror centres (CADC and ESAC). The harvesting tool normally operates in incremental mode (recent changes) to maintain an up-to-date copy of the metadata. Consistency of the metadata is insured through the use of a robust metadata checksum algorithm; a full validation mode can be used to check and fix cases where incremental harvest events or deleted observation events were missed (rare) or source and destination metadata checksums do not match.
 
 We have also developed a new file synchronization tool that leverages CAOM metadata to discover and retrieve files from the source (MAST) to the mirror sites.  Through the use a backend plugins, the CADC and ESAC have extended the file synchronization to interface with their respective site-specific storage systems.. Like the metadata harvesting tool, file synchronization normally operates in incremental mode: it uses local CAOM metadata to discover new or modified files and schedule downloads. A separate mode performs downloads. A validation mode performs a full comparison of files referenced in CAOM with those in the local storage system and (optionally) schedules downloads to fix any discrepancies.
 
-Apart from the common data collection, services and tools described above, partners are allowed to extend CAOM metadata with more information specifically intended to provide added value features. ESAC, for instance, introduced information about publications in their instance of the Archive.
-</body> </html>
+Apart from the common data collection, services and tools described above, partners are allowed to extend CAOM metadata with more information specifically intended to provide added value features. ESAC, for instance, introduced information about publications in their instance of the Archive.</p>
+</div><!-- id -->
+<!--#include virtual="/includes/footer.inc" -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
+
+                                                            

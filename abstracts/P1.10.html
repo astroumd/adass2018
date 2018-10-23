@@ -1,5 +1,40 @@
-<html> <body>
-Prev: <A HREF=P1.9.html>P1.9</A> Next: <A HREF=P1.11.html>P1.11</A> <br><br>
+<!-- generic header for adass web pages -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ADASS 2018 | Abstracts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <!--#include virtual="/includes/nav_p.inc"-->
+
+        <!-- Page Content -->
+        <div class="container">
+        <br>
+        <div id="poster">
+        <h2 style="padding-top: 80px; margin-top: -80px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+        Abstracts
+        </li>    
+        </ol>
+        </h2>
+Prev: <a href="/abstracts/O10.5.html">O10.5</a> Next: <a href="/abstracts/P10.11.html">P10.11</a> <br><br>
 <b>P1.10: Paillassa, Maxime</b>
 <br>
 Maxime Paillassa (Laboratoire d’astrophysique de Bordeaux, Univ. Bordeaux, CNRS, B18N, allée Geoffrey Saint-Hilaire, 3) <br> Emmanuel Bertin (Sorbonne Université, CNRS, UMR 7095, Institut d’Astrophysique de Paris, 98 bis bd Arago, 75014 Paris) <br>  Hervé Bouy (Laboratoire d’astrophysique de Bordeaux, Univ. Bordeaux, CNRS, B18N, allée Geoffrey Saint-Hilaire, 3)<br>   <br>   <br>  <br><br>
@@ -7,6 +42,17 @@ Maxime Paillassa (Laboratoire d’astrophysique de Bordeaux, Univ. Bordeaux, CNR
 <b>Theme:</b>  Machine Learning in Astronomy
 <br>
 <b>Title:</b> <i>Identifying contaminants in astronomical images using convolutional neural networks</i>
-<br><br>
-In this work, we propose to use convolutional neural networks to detect contaminants in astronomical images. Each contaminant is treated in a one vs all fashion. Once trained, our networks are able to detect various contaminants such as cosmic rays, hot and bad pixels defaults, saturated pixels, diffraction spikes, nebulosities, persistence effects, satellite trails, residual fringe patterns, or tracking errors in images, encompassing a broad range of ambient conditions, PSF sampling, detectors, optics and stellar density. The CNN is performing semantic segmentation: it can output a probability map, assigning to each pixel its probability to belong to the contaminant or the background class, except for tracking errors where another convolutional neural network can assign to a whole focal plane the probability that it is affected by tracking error. Training and testing data have been gathered from real data originating from various modern CCD and near-IR cameras or simulated.
-</body> </html>
+<br><p>
+In this work, we propose to use convolutional neural networks to detect contaminants in astronomical images. Each contaminant is treated in a one vs all fashion. Once trained, our networks are able to detect various contaminants such as cosmic rays, hot and bad pixels defaults, saturated pixels, diffraction spikes, nebulosities, persistence effects, satellite trails, residual fringe patterns, or tracking errors in images, encompassing a broad range of ambient conditions, PSF sampling, detectors, optics and stellar density. The CNN is performing semantic segmentation: it can output a probability map, assigning to each pixel its probability to belong to the contaminant or the background class, except for tracking errors where another convolutional neural network can assign to a whole focal plane the probability that it is affected by tracking error. Training and testing data have been gathered from real data originating from various modern CCD and near-IR cameras or simulated.</p>
+</div><!-- id -->
+<!--#include virtual="/includes/footer.inc" -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
+
+                                                            

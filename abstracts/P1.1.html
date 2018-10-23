@@ -1,5 +1,40 @@
-<html> <body>
-Prev: <A HREF=O1.4.html>O1.4</A> Next: <A HREF=P1.2.html>P1.2</A> <br><br>
+<!-- generic header for adass web pages -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ADASS 2018 | Abstracts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <!--#include virtual="/includes/nav_p.inc"-->
+
+        <!-- Page Content -->
+        <div class="container">
+        <br>
+        <div id="poster">
+        <h2 style="padding-top: 80px; margin-top: -80px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+        Abstracts
+        </li>    
+        </ol>
+        </h2>
+Prev: <a href="/abstracts/O1.1.html">O1.1</a> Next: <a href="/abstracts/P10.1.html">P10.1</a> <br><br>
 <b>P1.1: Araya, Mauricio</b>
 <br>
 Mauricio Araya (UTFSM) <br> Francisco Casas (UTFSM) <br>  Rodrigo Caceres (UTFSM)<br>  Edson Carquín (UTFSM)<br>   <br>  <br><br>
@@ -7,10 +42,21 @@ Mauricio Araya (UTFSM) <br> Francisco Casas (UTFSM) <br>  Rodrigo Caceres (UTFSM
 <b>Theme:</b>  Machine Learning in Astronomy
 <br>
 <b>Title:</b> <i>Cherenkov Shower Detection Combining Probability Distributions from Convolutional Neural Networks.</i>
-<br><br>
+<br><p>
 Ground-based gamma-ray observatories such as the Cherenkov Telescope Array presents new challenges for astronomical data analysis. The dynamics of the atmosphere and the complexity of Cherenkov shower are two uncertainty sources that needed to be embraced rather than corrected.
 
 As each telescope only has access to a separated patch, the partial information of each one has to be combined. For instance, when blots can be identified on the images, the application of Hillas parameters allows to identify the approximate direction to the projection's center. This information can be combined for several telescopes using stereoscopic reconstruction to converge on a single point. The limitation of this technique however is that it performs regressions to a predefined blot shapes, not using all the information contained in the images. Thus, deep learning techniques based on Convolutional Neural Networks have been applied with promising results. However, they rely on very large networks that process all the telescope images at once, which might not scale properly when dealing with large arrays.
 
-We propose to run several separate instances of an smaller network for each telescope, but that are able to retrieve a probability distribution instead of approximate coordinates for the sought point. This probability distribution can be arranged by the network so it can express certainty about the direction or the distance to the center of the projection separately. The distributions retrieved by all the telescopes can be combined to get a final probability distribution. Preliminary results shows the viability of this approach to identify the center and assign a confidence value to the result.
-</body> </html>
+We propose to run several separate instances of an smaller network for each telescope, but that are able to retrieve a probability distribution instead of approximate coordinates for the sought point. This probability distribution can be arranged by the network so it can express certainty about the direction or the distance to the center of the projection separately. The distributions retrieved by all the telescopes can be combined to get a final probability distribution. Preliminary results shows the viability of this approach to identify the center and assign a confidence value to the result.</p>
+</div><!-- id -->
+<!--#include virtual="/includes/footer.inc" -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
+
+                                                            

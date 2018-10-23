@@ -1,5 +1,40 @@
-<html> <body>
-Prev: <A HREF=I3.2.html>I3.2</A> Next: <A HREF=O3.2.html>O3.2</A> <br><br>
+<!-- generic header for adass web pages -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ADASS 2018 | Abstracts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <!--#include virtual="/includes/nav_p.inc"-->
+
+        <!-- Page Content -->
+        <div class="container">
+        <br>
+        <div id="poster">
+        <h2 style="padding-top: 80px; margin-top: -80px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+        Abstracts
+        </li>    
+        </ol>
+        </h2>
+Prev: <a href="/abstracts/P9.10.html">P9.10</a> Next: <a href="/abstracts/O10.2.html">O10.2</a> <br><br>
 <b>O3.1: Zapart, Christopher</b>
 <br>
 Christopher Zapart (NAOJ) <br> Y. Shirasaki (NAOJ) <br>  M. Ohishi (NAOJ)<br>  Y. Mizumoto (NAOJ)<br>  W. Kawasaki (NAOJ)<br>  T. Kobayashi (NAOJ), G. Kosugi (NAOJ), E. Morita (NAOJ), A. Yoshino (NAOJ), S. Eguchi (Fukuoka Univ.)<br><br>
@@ -8,12 +43,23 @@ Christopher Zapart (NAOJ) <br> Y. Shirasaki (NAOJ) <br>  M. Ohishi (NAOJ)<br>  Y
 <b>Theme:</b>  Astrophysical Data Visualization from Line Plots to Augmented and Virtual Reality
 <br>
 <b>Title:</b> <i>An introduction to FITSWebQL</i>
-<br><br>
+<br><p>
 The JVO ALMA WebQL web service - available through the JVO ALMA FITS archive - has been upgraded to include legacy data from other telescopes, for example Nobeyama NRO45M in Japan. The updated server software has been renamed FITSWebQL. In addition, a standalone desktop version supporting Linux, macOS and Windows 10 Linux Subsystem (Bash on Windows) is also available for download from http://jvo.nao.ac.jp/~chris/ .
 
 The FITSWebQL server enables viewing of even 100GB-large FITS files in a web browser running on a PC with a limited amount of RAM. Users can interactively zoom-in to selected areas of interest with the corresponding frequency spectrum being calculated on the server in near real-time. The client (a browser) is a JavaScript application built on AJAX, WebSockets, HTML5, WebGL and SVG.
 
 There are many challenges when providing a web browser-based real-time FITS data cube preview service over high-latency low-bandwidth network connections. The upgraded version tries to overcome the latency issue by predicting user mouse movements with a Kalman Filter in order to speculatively deliver the real-time spectrum data at a point where the user is likely to be looking at. The new version also allows one to view multiple FITS files simultaneously in an RGB composite mode (NRO45M FUGIN only), where each dataset is assigned one RGB channel to form a colour image. Spectra from multiple FITS cubes are shown together too.
 
-The talk gives a brief tour of the FITSWebQL main features. We also touch on some of the recent developments, such as an experimental switch from C/C++ to Rust (see https://www.rust-lang.org/) for improved stability, better memory management and fearless concurrency, or attempts to display FITS data cubes in the form of interactive on-demand video streams in a web browser.
-</body> </html>
+The talk gives a brief tour of the FITSWebQL main features. We also touch on some of the recent developments, such as an experimental switch from C/C++ to Rust (see https://www.rust-lang.org/) for improved stability, better memory management and fearless concurrency, or attempts to display FITS data cubes in the form of interactive on-demand video streams in a web browser.</p>
+</div><!-- id -->
+<!--#include virtual="/includes/footer.inc" -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
+
+                                                            

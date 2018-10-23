@@ -1,5 +1,40 @@
-<html> <body>
-Prev: <A HREF=P10.1.html>P10.1</A> Next: <A HREF=P10.3.html>P10.3</A> <br><br>
+<!-- generic header for adass web pages -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ADASS 2018 | Abstracts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <!--#include virtual="/includes/nav_p.inc"-->
+
+        <!-- Page Content -->
+        <div class="container">
+        <br>
+        <div id="poster">
+        <h2 style="padding-top: 80px; margin-top: -80px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+        Abstracts
+        </li>    
+        </ol>
+        </h2>
+Prev: <a href="/abstracts/P4.3.html">P4.3</a> Next: <a href="/abstracts/P5.1.html">P5.1</a> <br><br>
 <b>P10.2: Atemkeng Teufack, Marcellin</b>
 <br>
 Marcellin Atemkeng (Department of Physics and Electronics, Rhodes University) <br> Elhadji Moustapha SECK (African Institute for Mathematical Sciences, Cameroon) <br>  Oleg Smirnov (SKA/Department of Physics and Electronics, Rhodes University)<br>  Sphesihle Makhathini (SKA/Department of Physics and Electronics, Rhodes University)<br>   <br>  <br><br>
@@ -7,12 +42,23 @@ Marcellin Atemkeng (Department of Physics and Electronics, Rhodes University) <b
 <b>Theme:</b>  Databases and Archives: Challenges and Solutions in the Big Data Era
 <br>
 <b>Title:</b> <i>Baseline-dependent dimensional reduction techniques for radio interferometric big data compression</i>
-<br><br>
+<br><p>
 Modern radio interferometers like MeerKAT, ASKAP, and LOFAR produce large amounts of data. The high data rates are driven by the fine time and frequency sampling of these instruments, as well as high angular resolution. For MeerKAT this amount of data is around anywhere from 64GB to 0.5 TB of row visibilities per second. The SKA will generate orders of magnitudes higher than this.
 Therefore, data compression is required to save memory and improve processing time. Offringa (2016) showed that lossy compression can compress LOFAR data by a factor that is greater than 5. A natural method to compress the data is through averaging, either baseline-dependent averaging or windowing as described in Atemkeng et al. (2018). Kartik et al. (2017) showed that the data can be compressed using a Fourier dimensionality reduction model (FDRM). This is in the gridded visibilities and not in the continuous visibilities. The gridded visibilities lie on a regular grid where data for all baselines have been interpolated
 together making it difficult to gauge an acceptable variance thresholding of the non-zero singular
 values (see Kartik et al. (2017)). Since each baseline sees the sky differently, decorrelation is baseline dependent and the noise variance is different per-visibility: these effects cannot be taken into account in the FDRM. Some applications (e.g. transient search, or to build up a wide-FoV interferometric archive)
 would require storing the raw data from all the baselines and not the gridded data.
 This work will studies the different algorithms in literature for big data dimensional reduction and apply them to visibilities data. The reduction should be
-baseline-dependent.
-</body> </html>
+baseline-dependent.</p>
+</div><!-- id -->
+<!--#include virtual="/includes/footer.inc" -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
+
+                                                            

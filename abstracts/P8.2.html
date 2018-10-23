@@ -1,5 +1,40 @@
-<html> <body>
-Prev: <A HREF=P8.1.html>P8.1</A> Next: <A HREF=P8.3.html>P8.3</A> <br><br>
+<!-- generic header for adass web pages -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ADASS 2018 | Abstracts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <!--#include virtual="/includes/nav_p.inc"-->
+
+        <!-- Page Content -->
+        <div class="container">
+        <br>
+        <div id="poster">
+        <h2 style="padding-top: 80px; margin-top: -80px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+        Abstracts
+        </li>    
+        </ol>
+        </h2>
+Prev: <a href="/abstracts/P9.8.html">P9.8</a> Next: <a href="/abstracts/P13.2.html">P13.2</a> <br><br>
 <b>P8.2: Eguchi, Satoshi</b>
 <br>
 Satoshi Eguchi (Fukuoka University) <br> Shota Shibagaki (Fukuoka University) <br>  Kazuhiro Hayama (Fukuoka University)<br>  Kei Kotake (Fukuoka University)<br>   <br>  <br><br>
@@ -7,6 +42,17 @@ Satoshi Eguchi (Fukuoka University) <br> Shota Shibagaki (Fukuoka University) <b
 <b>Theme:</b>  Time Domain Astronomy
 <br>
 <b>Title:</b> <i>Prototype Implementation of a Web-Based Gravitational Wave Signal Analyzer: SNEGRAF</i>
-<br><br>
-A direct detection of gravitational waves is one of the most exciting frontiers for modern astronomy and astrophysics. Gravitational wave signals combined with classical electro-magnetic observations, known as multi-messenger astronomy, promise newer and deeper insights about the cosmic evolution of astrophysical objects such as neutron starts and black holes. To this end, we have been developing an original data processing pipeline for KAGRA, a Japanese gravitational wave telescope, for optimal detections of supernova events. As a part of our project, we have just released a web application named SuperNova Event Gravitational-wave-display in Fukuoka (SNEGRAF) in this autumn. SNEGRAF accepts the users' theoretical waveforms as a plain text file consisting of a time series of h+ and hx (the plus and cross mode of gravitational waves, respectively), then displays the input, a corresponding spectrogram, and power spectrum together with KAGRA sensitivity curve and the signal-to-noise ratio; we adopt Google Visualization API for the interactive visualization of the input waveforms. However, it is a time-consuming task to draw more than ~10^5 data points directly with JavaScript, although the number can be typical for a supernova hunt by assuming a typical duration of the event and sampling rate of the detectors; a combination of recursive decimations of the original in the server-side program and an appropriate selection of them depending on the time duration requested by the user in a web browser achieves an acceptable latency. In this poster, we present the current design, implementation and optimization algorithms of SNEGRAF, and its future perspectives.
-</body> </html>
+<br><p>
+A direct detection of gravitational waves is one of the most exciting frontiers for modern astronomy and astrophysics. Gravitational wave signals combined with classical electro-magnetic observations, known as multi-messenger astronomy, promise newer and deeper insights about the cosmic evolution of astrophysical objects such as neutron starts and black holes. To this end, we have been developing an original data processing pipeline for KAGRA, a Japanese gravitational wave telescope, for optimal detections of supernova events. As a part of our project, we have just released a web application named SuperNova Event Gravitational-wave-display in Fukuoka (SNEGRAF) in this autumn. SNEGRAF accepts the users' theoretical waveforms as a plain text file consisting of a time series of h+ and hx (the plus and cross mode of gravitational waves, respectively), then displays the input, a corresponding spectrogram, and power spectrum together with KAGRA sensitivity curve and the signal-to-noise ratio; we adopt Google Visualization API for the interactive visualization of the input waveforms. However, it is a time-consuming task to draw more than ~10^5 data points directly with JavaScript, although the number can be typical for a supernova hunt by assuming a typical duration of the event and sampling rate of the detectors; a combination of recursive decimations of the original in the server-side program and an appropriate selection of them depending on the time duration requested by the user in a web browser achieves an acceptable latency. In this poster, we present the current design, implementation and optimization algorithms of SNEGRAF, and its future perspectives.</p>
+</div><!-- id -->
+<!--#include virtual="/includes/footer.inc" -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
+
+                                                            

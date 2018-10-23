@@ -1,5 +1,40 @@
-<html> <body>
-Prev: <A HREF=P6.2.html>P6.2</A> Next: <A HREF=P6.4.html>P6.4</A> <br><br>
+<!-- generic header for adass web pages -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ADASS 2018 | Abstracts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <!--#include virtual="/includes/nav_p.inc"-->
+
+        <!-- Page Content -->
+        <div class="container">
+        <br>
+        <div id="poster">
+        <h2 style="padding-top: 80px; margin-top: -80px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+        Abstracts
+        </li>    
+        </ol>
+        </h2>
+Prev: <a href="/abstracts/O10.3.html">O10.3</a> Next: <a href="/abstracts/P12.1.html">P12.1</a> <br><br>
 <b>P6.3: Burnier, Julien</b>
 <br>
 Julien Burnier (Université de Genève) <br> Nicolas Buschacher (Université de Genève) <br>  Fabien Alesina (Université de Genève)<br>   <br>   <br>  <br><br>
@@ -7,11 +42,22 @@ Julien Burnier (Université de Genève) <br> Nicolas Buschacher (Université de 
 <b>Theme:</b>  DevOps Practices in Astronomy Software
 <br>
 <b>Title:</b> <i>Development, tests and deployment of web application in DACE</i>
-<br><br>
+<br><p>
 The Data and Analysis Center for Exoplanets (DACE) is a web platform based at the University of Geneva (CH) dedicated to extrasolar planets data visualisation, exchange and analysis.
 This platform is based on web technologies using common programming languages like HTML and Javascript for the front-end and a Java REST API for the back-end.
 Over the last 6 months, the process to maintain, develop, test and deploy the applications has been dramatically improved to facilitate the maintenance and the integration of new features. The goal of such automation is to let more time to focus on development and reduce the duplicated work.
 To achieve this result, we migrated our Java application to the Maven software project management and added unit tests. We implemented a pipeline on GitLab which consists of executing the tests and deploy the application in a dev environment at every commit. The front-end side is then tested using the Selenium web browser automation to simulate the user - website interactions and compare the new results with the old ones.
 Once all the tests are validated, a manual action on the GitLab interface can be done to deploy the application on the official web site and we ensure the compatibility of the new features with the production version.
-We are currently working to have a very complete set of tests on both back and front end in order to remove the manual part of production deployment and to have a fully automated integration of our applications.
-</body> </html>
+We are currently working to have a very complete set of tests on both back and front end in order to remove the manual part of production deployment and to have a fully automated integration of our applications.</p>
+</div><!-- id -->
+<!--#include virtual="/includes/footer.inc" -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
+
+                                                            

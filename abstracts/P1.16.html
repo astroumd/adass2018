@@ -1,5 +1,40 @@
-<html> <body>
-Prev: <A HREF=P1.15.html>P1.15</A> Next: <A HREF=P1.17.html>P1.17</A> <br><br>
+<!-- generic header for adass web pages -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ADASS 2018 | Abstracts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <!--#include virtual="/includes/nav_p.inc"-->
+
+        <!-- Page Content -->
+        <div class="container">
+        <br>
+        <div id="poster">
+        <h2 style="padding-top: 80px; margin-top: -80px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+        Abstracts
+        </li>    
+        </ol>
+        </h2>
+Prev: <a href="/abstracts/P10.15.html">P10.15</a> Next: <a href="/abstracts/O12.2.html">O12.2</a> <br><br>
 <b>P1.16: Tao, Yihan</b>
 <br>
 Yihan Tao (National Astronomical Observatories, Chinese Academy of Sciences) <br> Yanxia Zhang (National Astronomical Observatories, Chinese Academy of Sciences) <br>  Chenzhou Cui (National Astronomical Observatories, Chinese Academy of Sciences)<br>   <br>   <br>  <br><br>
@@ -7,10 +42,21 @@ Yihan Tao (National Astronomical Observatories, Chinese Academy of Sciences) <br
 <b>Theme:</b>  Machine Learning in Astronomy
 <br>
 <b>Title:</b> <i>Spectral Classification of Galaxies using Deep Neural Networks and Self-taught Learning</i>
-<br><br>
+<br><p>
 Spectral classification using machine learning methods is highly in need these days for large sky survey (e.g. LAMOST and SDSS) . These survey produce large amount of spectra data，automated methods can save human researchers from the painful task of classifying and checking the spectra by eye. Recent years, many research has found it promising by using deep neural networks. However, it has the problem of difficult to understand the model, and the trained model is hardly reusable for a new data set. 
 
 In previous work, we carried out experiments using supervised machine learning methods (Logistic Regression, Random Forest and Linear SVM) to select active galactic nucleus (AGNs) from a dataset of galaxy spectra (including AGNs, starburst galaxies, starforming galaxies, and others) provided by SDSS DR14. The results show that the accuracy of these traditional machine learning method is acceptable as the classification accuracy reaches ~91%. However, it can be limited because we used linear PCA of 20 components to present spectra features.
 
-In this paper, we investigate the accuracy of applying deep neural networks (DNNs) to learn the feature representation from the galaxy spectra. We trained a DNN of three hidden layer and its test accuracy achieved higher than 95%. To make the model reusable and more interpretable, we also employed self-taught learning (unsupervised feature learning) to let the spectra data speak for itself. The advantage of self-taught learning and unsupervised feature learning is that we can get the algorithms to learn a feature representation from large amount of unlabeled data. This is especially useful for some kind of galaxies (such as LINERs, BL Lacs) which we have relatively small amount of labeled spectra. We trained a 7-layer auto-encoder (2600-1024-256-20-256-768-1024-2600) and then feed into the classifiers.  In addition, we present and visualize the features learnt from our auto-encoder and try to explain which part of the spectra is more important for classification.
-</body> </html>
+In this paper, we investigate the accuracy of applying deep neural networks (DNNs) to learn the feature representation from the galaxy spectra. We trained a DNN of three hidden layer and its test accuracy achieved higher than 95%. To make the model reusable and more interpretable, we also employed self-taught learning (unsupervised feature learning) to let the spectra data speak for itself. The advantage of self-taught learning and unsupervised feature learning is that we can get the algorithms to learn a feature representation from large amount of unlabeled data. This is especially useful for some kind of galaxies (such as LINERs, BL Lacs) which we have relatively small amount of labeled spectra. We trained a 7-layer auto-encoder (2600-1024-256-20-256-768-1024-2600) and then feed into the classifiers.  In addition, we present and visualize the features learnt from our auto-encoder and try to explain which part of the spectra is more important for classification.</p>
+</div><!-- id -->
+<!--#include virtual="/includes/footer.inc" -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
+
+                                                            
