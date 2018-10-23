@@ -1,5 +1,40 @@
-<html> <body>
-Prev: <A HREF=O4.1.html>O4.1</A> Next: <A HREF=O4.5.html>O4.5</A> <br><br>
+<!-- generic header for adass web pages -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ADASS 2018 | Abstracts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <!--#include virtual="/includes/nav_p.inc"-->
+
+        <!-- Page Content -->
+        <div class="container">
+        <br>
+        <div id="poster">
+        <h2 style="padding-top: 80px; margin-top: -80px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+        Abstracts
+        </li>    
+        </ol>
+        </h2>
+Prev: <a href="/abstracts/O4.1.html">O4.1</a> Next: <a href="/abstracts/O4.5.html">O4.5</a> <br><br>
 <b>O4.2: Nakazato, Takeshi</b>
 <br>
 Takeshi Nakazato (National Astronomical Observatory of Japan) <br> Shiro Ikeda (The Institute of Statistical Mathematics) <br>  Kazunori Akiyama (National Radio Astronomy Observatory, MIT, Harvard University, NAOJ)<br>  George Kosugi (National Astronomical Observatory of Japan)<br>  Masayuki Yamaguchi (University of Tokyo, National Astronomical Observatory of Japan)<br>  Mareki Honma (National Astronomical Observatory of Japan)<br><br>
@@ -8,6 +43,17 @@ Takeshi Nakazato (National Astronomical Observatory of Japan) <br> Shiro Ikeda (
 <b>Theme:</b>  Data Science: Workflows Hardware Software Humanware
 <br>
 <b>Title:</b> <i>New Synthesis Imaging Tool for ALMA based on the Sparse Modeling</i>
-<br><br>
-A new imaging tool for radio interferometry has been developed based on the sparse modeling approach. It has been implemented as a Python module operating on Common Astronomy Software Applications (CASA) so that the tool is able to process the data taken by Atacama Large Millimeter/submillimeter Array (ALMA). In order to handle large data of ALMA, the Fast Fourier Transform has been implemented with gridding process. The concept of the sparse modeling for the image reconstruction has been realized with two regularization terms: L1 norm term for the sparsity and Total Squared Variation (TSV) term for the smoothness of the resulting image. Since it is important to adjust the size of the regularization terms appropriately, the cross-validation routine, which is a standard method in statistics, has been implemented. This imaging tool runs even on a standard laptop PC and processes ALMA data within a reasonable time. The interface of the tool is comprehensible to CASA users and the usage is so simple that it consists of mainly three steps to obtain the result: an initialization, a configuration, and a processing. Remarkable feature of the tool is that it produces the solution without human intervention. Furthermore, the solution is robust in the sense that it is less affected by the processing parameters. For the verification of the imaging tool, we have tested it with two extreme examples from ALMA Science Verification Data: the protoplanetary disk, HL Tau as a typical smooth and filled image, and the lensed galaxy, SDP.81 as a sparse image. In our presentation, these results will be presented with some performance information. The comparison between our results and those of traditional CLEAN method will also be provided. Finally, our future improvement and enhancement plan to make our tool competitive with CLEAN will be shown.
-</body> </html>
+<br><p>
+A new imaging tool for radio interferometry has been developed based on the sparse modeling approach. It has been implemented as a Python module operating on Common Astronomy Software Applications (CASA) so that the tool is able to process the data taken by Atacama Large Millimeter/submillimeter Array (ALMA). In order to handle large data of ALMA, the Fast Fourier Transform has been implemented with gridding process. The concept of the sparse modeling for the image reconstruction has been realized with two regularization terms: L1 norm term for the sparsity and Total Squared Variation (TSV) term for the smoothness of the resulting image. Since it is important to adjust the size of the regularization terms appropriately, the cross-validation routine, which is a standard method in statistics, has been implemented. This imaging tool runs even on a standard laptop PC and processes ALMA data within a reasonable time. The interface of the tool is comprehensible to CASA users and the usage is so simple that it consists of mainly three steps to obtain the result: an initialization, a configuration, and a processing. Remarkable feature of the tool is that it produces the solution without human intervention. Furthermore, the solution is robust in the sense that it is less affected by the processing parameters. For the verification of the imaging tool, we have tested it with two extreme examples from ALMA Science Verification Data: the protoplanetary disk, HL Tau as a typical smooth and filled image, and the lensed galaxy, SDP.81 as a sparse image. In our presentation, these results will be presented with some performance information. The comparison between our results and those of traditional CLEAN method will also be provided. Finally, our future improvement and enhancement plan to make our tool competitive with CLEAN will be shown.</p>
+</div><!-- id -->
+<!--#include virtual="/includes/footer.inc" -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
+
+                                                            

@@ -1,5 +1,40 @@
-<html> <body>
-Prev: <A HREF=P4.1.html>P4.1</A> Next: <A HREF=P4.3.html>P4.3</A> <br><br>
+<!-- generic header for adass web pages -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ADASS 2018 | Abstracts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <!--#include virtual="/includes/nav_p.inc"-->
+
+        <!-- Page Content -->
+        <div class="container">
+        <br>
+        <div id="poster">
+        <h2 style="padding-top: 80px; margin-top: -80px;">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+        Abstracts
+        </li>    
+        </ol>
+        </h2>
+Prev: <a href="/abstracts/P4.1.html">P4.1</a> Next: <a href="/abstracts/P4.3.html">P4.3</a> <br><br>
 <b>P4.2: Allen, Christopher</b>
 <br>
 Christopher Allen (Smithsonian Astrophysical Observatory) <br> Francis A. Primini (Smithsonian Astrophysical Observatory) <br>  Joseph B. Miller (Smithsonian Astrophysical Observatory)<br>   <br>   <br>  <br><br>
@@ -7,12 +42,23 @@ Christopher Allen (Smithsonian Astrophysical Observatory) <br> Francis A. Primin
 <b>Theme:</b>  Data Science: Workflows Hardware Software Humanware
 <br>
 <b>Title:</b> <i>Optimization of Aperture Photometry in the Chandra Source Catalog</i>
-<br><br>
+<br><p>
 As part of the creation of the Chandra Source Catalog, the Aperture Photometry systems characterize source photon counts, count rates, energy flux, and photon flux for over 300,000 sources.  These sources are characterized per observation and across blockings of similar observations, leading to approximately three million unique characterizations. As development progressed and our test sets grew both in both complexity and size, runtime issues were identified - scenarios where the system was too resource-intensive or had projected processing times far outside of the project timeframe.  These issues lead to a continual reevaluation of our implementation of the tool, all the while keeping the underlying scientific algorithms intact. Herein we will discuss the algorithm, the challenges we encountered scaling it up for production, and the optimizations we added as a result.
  
 These design decisions cover a broad scope, from the mundane of restructuring nested loops to minimize file I/O, to the intricate of modifying our statistical sampling methods and replacing our hypermesh-based fitting with a Markov chain Monte Carlo sampling that was then converted into a probability distribution. 
  
 Analysis tools used to identify code hotspots will be reviewed, as well as the coding tools we used to refactor some computationally expensive sections of the tool. In exploring these decisions in detail, the pros and cons of both the chosen solution and alternative options considered but not chosen will be discussed.
  
-The tool’s high-level design will also be analyzed, elaborating on how we were able in a single tool to perform analysis on the broad variety of sources the catalog encounters - from point sources to broad extended emissions, and from the faintest detections to brightest.
-</body> </html>
+The tool’s high-level design will also be analyzed, elaborating on how we were able in a single tool to perform analysis on the broad variety of sources the catalog encounters - from point sources to broad extended emissions, and from the faintest detections to brightest.</p>
+</div><!-- id -->
+<!--#include virtual="/includes/footer.inc" -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
+
+                                                            
