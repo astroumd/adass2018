@@ -15,26 +15,8 @@
               \includegraphics[width=0.3\textwidth]{www/images/logo250.png}
               \end{center}
               \bigskip
-           Generated 2018-10-25T15:28:30.987251\newpage
+           Generated 2018-10-25T20:52:42.738253\newpage
 
-\subsection*{P3.1: Exoplanets data visualization in multidimensional plots using virtual reality in DACE}
-{\bf Theme:}  Astrophysical Data Visualization from Line Plots to Augmented and Virtual Reality\newline
-{\bf Author(s):}\newline
-Fabien ALESINA (University of Geneva) \newline Nicolas BUCHSCHACHER (University of Geneva) \newline  Julien BURNIER (University of Geneva)\newline   \newline  \newline  \newline\newline
-{\bf Contact:} {\it fabien.alesina@unige.ch}\newline
-\newline\newline
-{\bf Abstract:}\newline
-The Data Analysis Center for Exoplanets (DACE) is a web platform based at the University of Geneva (CH) dedicated to exoplanets data visualization, exchange and analysis.
-
-This platform is based on web technologies using common programming languages like HTML and JavaScript. During the past 3 years, the plotting tools has been improved in order to display large datasets on the platform, dealing with browsers performances constraints.
-
-The next challenge is to display the exoplanets data in multidimensional plots. The web virtual reality technology has been added on DACE, and allows the user to display the data in virtual reality devices like cardboards and headsets. 
-
-The virtual reality is used for displaying 3D plots of synthetic planetary populations, discovered exoplanets from different archives, and 3D planetary systems with a star and its orbiting planets.
-
-The used technologies are webVR, external GPUs called eGPUs in order to increase laptop performances, HTC vive pro headset and google cardboards.\newline
-{\bf Notes:}\newline
-{\newpage
 \subsection*{P8.1: A GPU implementation of the harmonic sum algorithm}
 {\bf Theme:}  Time Domain Astronomy\newline
 {\bf Author(s):}\newline
@@ -65,6 +47,24 @@ K. Albert (Max Planck Institute for Solar System Research (MPS)) \newline J. Hiz
 The Polarimetric and Helioseismic Imager (PHI) is the first solar spectropolarimeter that goes to deep space. It will be launched on-board the Solar Orbiter (SO) spacecraft, to orbit the Sun in highly elliptical orbits. SO/PHI has stringent requirements on its science data accuracy, while it is subjected to highly dynamic environments by the spacecraft. The orbits, however, severely limit the amount of telemetry, making the download of numerous full datasets and additional calibration data unfeasible. In addition, they also increase the command-response times of the instrument.
 To overcome these limitations, SO/PHI implements autonomous on-board instrument calibration, and autonomous on-board science data reduction. The algorithms are implemented within a system of software framework and dedicated hardware implementations in reconfigurable FPGA-s. The system is designed to overcome the resource and computational power limitations of on-board computing, do secure metadata logging and warn ground support of possible errors in the data processing flow.
 In this contribution we do an in-depth performance analysis of the on-board data processing system. We test multiple data pipelines on realistic data in a step by step analysis, and tune the pipeline parameters to achieve optimal results. We finally analyse the accuracy of the resulting scientific data products calculated by the instrument.\newline
+{\bf Notes:}\newline
+{\newpage
+\subsection*{P3.1: Exoplanets data visualization in multidimensional plots using virtual reality in DACE}
+{\bf Theme:}  Astrophysical Data Visualization from Line Plots to Augmented and Virtual Reality\newline
+{\bf Author(s):}\newline
+Fabien ALESINA (University of Geneva) \newline Nicolas BUCHSCHACHER (University of Geneva) \newline  Julien BURNIER (University of Geneva)\newline   \newline  \newline  \newline\newline
+{\bf Contact:} {\it fabien.alesina@unige.ch}\newline
+\newline\newline
+{\bf Abstract:}\newline
+The Data Analysis Center for Exoplanets (DACE) is a web platform based at the University of Geneva (CH) dedicated to exoplanets data visualization, exchange and analysis.
+
+This platform is based on web technologies using common programming languages like HTML and JavaScript. During the past 3 years, the plotting tools has been improved in order to display large datasets on the platform, dealing with browsers performances constraints.
+
+The next challenge is to display the exoplanets data in multidimensional plots. The web virtual reality technology has been added on DACE, and allows the user to display the data in virtual reality devices like cardboards and headsets. 
+
+The virtual reality is used for displaying 3D plots of synthetic planetary populations, discovered exoplanets from different archives, and 3D planetary systems with a star and its orbiting planets.
+
+The used technologies are webVR, external GPUs called eGPUs in order to increase laptop performances, HTC vive pro headset and google cardboards.\newline
 {\bf Notes:}\newline
 {\newpage
 \subsection*{O2.1: Hit the Ground Running: Data Management for JWST}
@@ -481,7 +481,7 @@ However, the non-perfect sampling of the pulses rising-edges could result in sig
 We present here the analysis of the magnitude of this effect and propose a correction. In addition, we evaluate the impact of a reduced readout sampling frequency in the energy resolution, once the jitter correction has been applied.\newline
 {\bf Notes:}\newline
 {\newpage
-\subsection*{P9.7: An automatic data collection and analysis software for GRB studies and its result}
+\subsection*{P9.1: An automatic data collection and analysis software for GRB studies and its result}
 {\bf Theme:}  Multi-Messenger Astronomy\newline
 {\bf Author(s):}\newline
 Wei Chen (Institute of High Energy Physics, Chinese Academy of Sciences) \newline Weihua Lei (Huazhong University of Science and Technology) \newline   \newline   \newline  \newline  \newline\newline
@@ -600,6 +600,18 @@ College of Information and Science Technology, Beijng Normal University\newline\
 \newline\newline
 {\bf Abstract:}\newline
 Along with the rapid development of telecommunication, radio frequency interference (RFI) generated from diverse human produced sources like electronic equipment, cell phones, GPS and so on can contaminate the weak radio band data. Therefore, RFI is an important challenge for radio astronomy. RFI detection can be regarded a special task of image segmentation. As for RFI signals, they appears in the form of point, vertical or horizontal lines. However, most existing convolution neural networks (CNNs) perform classification tasks, where the output is the single classification label of an image. The U-Net enables classification of each pixel within the image, which is suitable and competitive for image segmentation. Thus, in this paper, we implement the U-Net of 14 layers with framework of Keras to detect RFI signals. The U-Net can perform the classification task of clean signal and RFI. Also, the U-Net is a kind of extended CNN with symmetric architecture, which consists of a contracting path to capture context information and extract features and an expanding path to get precise localization. It extracts the features of RFI for learning RFI distribution pattern and then calculates the probability value of RFI for each pixel. Then we set a threshold to get the results flagged by RFI. We train the parameter of the U-Net with “Tianlai” data(A radio telescope-array, the observing time is from 20:15:45 to 24:18:45 on 27th of September 2016, the frequency is from 744MHz to 756MHz and the number of baseline is 18528). The experimental results show that, compared with the traditional RFI flagging method, this approach performs better with satisfying accuracy and takes into account the relationship between different baselines, which contributes to correctly and effectively flag RFI.\newline
+{\bf Notes:}\newline
+{\newpage
+\subsection*{P7.2: CCSDSPy - Convenient Decoding of Binary Spacecraft Telemetry}
+{\bf Theme:}  Software for Solar Systems Astronomy\newline
+{\bf Author(s):}\newline
+Daniel da Silva (NASA/GSFC, Trident Vantage Systems, Johns Hokpins University) \newline   \newline   \newline   \newline  \newline  \newline\newline
+{\bf Contact:} {\it dasilva@jhu.edu}\newline
+\newline\newline
+{\bf Abstract:}\newline
+CCSDS is a low-level packet format used by many NASA and ESA missions for low-level telemetry, and often contains tightly packed bits to reduce downlink requirements. CCSDSPy is a python library to ease decoding of CCSDS data for satellite ground systems. The driving need of this library is to ease the management of difficult to decode telemetry containing fields that are not byte-aligned, odd-length, or otherwise annoying.
+
+Poster preview: https://docs.google.com/presentation/d/1Ab3DaM\_UwP4rSL\_lESZCZdHsQmwp-WEPFoek-wFdCW4/edit?usp=sharing\newline
 {\bf Notes:}\newline
 {\newpage
 \subsection*{P5.4: Gaia Photometric Science Alerts Data Flow}
@@ -741,7 +753,7 @@ using similar networks to search for continuous gravitational waves
 directly in the detector strain data.\newline
 {\bf Notes:}\newline
 {\newpage
-\subsection*{P9.8: CALET Gamma-ray Burst Monitor web-analysis system}
+\subsection*{P9.2: CALET Gamma-ray Burst Monitor web-analysis system}
 {\bf Theme:}  Multi-Messenger Astronomy\newline
 {\bf Author(s):}\newline
 Ken Ebisawa (ISAS/JAXA) \newline Satoshi Nakahira (RIKEN) \newline  Takanori Sakamoto (Aoyama Gakuin University)\newline  Atsumasa Yoshida (Aoyama Gakuin University)\newline  \newline  \newline\newline
@@ -1537,18 +1549,6 @@ Mark Kyprianou (STScI) \newline Anastasia Alexov (STScI) \newline  Katherine Kal
 As with any large project, there are always lessons to be learned for future endeavors that can be applied and/or considered for similar endeavors.  The development of the Data Management Subsystem (DMS) for the James Webb Space Telescope (JWST) provides such an opportunity to take advantage of experiences and events that can be applied to other missions. The DMS software and hardware tool set is extensive; it involves more than 100 staff including developers, scientists and systems engineers.  It receives science and engineering telemetry data from the spacecraft, performs quality checking, calibration, data (re-)processing; archives the data; provides user notification, search, and access tools for JWST science and engineering data;  distributes data to the end user; provides extensive user analysis/visualization tools.  We will discuss the evolution of DMS and its interaction within the Science and Operations Center (S\&OC) covering keys to our success and also those that did not work out so well.\newline
 {\bf Notes:}\newline
 {\newpage
-\subsection*{P6.8: Application of Google Cloud Platform in Astrophysics}
-{\bf Theme:}  DevOps Practices in Astronomy Software\newline
-{\bf Author(s):}\newline
-MARCO LANDONI (INAF - Osservatorio Astronomico di Brera) \newline RICCARDO SMAREGLIA (INAF - OSS. ASTRONOMICO TRIESTE) \newline  GIULIANO TAFFONI (INAF - OSS ASTRONOMICO TRIESTE)\newline  ANDREA BIGNAMINI (INAF - OSSERVATORIO ASTRONOMICO TRIESTE)\newline  \newline  \newline\newline
-{\bf Contact:} {\it marco.landoni@inaf.it}\newline
-\newline\newline
-{\bf Abstract:}\newline
-The availability of new Cloud Platform offered by Google motivated us to propose nine Proof of Concepts (PoC) aiming to demonstrated and test the capabilities of the platform in the context of scientifically-driven tasks and requirements.
-In this poster, we review the status of our initiative by illustrating 3 out of 9 successfully closed PoC that we implemented on Google Cloud Platform.
-In particular, we illustrate a cloud architecture for deployment of scientific software as microservice coupling Google Compute Engine with Docker and Pub/Sub to dispatch heavily parallel simulations. We detail also en experiment for HPC based simulation and workflow executions of data reduction pipelines (for the TNG-GIANO-B spectrograph) deployed on GCP. We compare and contrast our experience with on-site facilities comparing advantages and disadvantages both in terms of total cost of ownership and reached performances.\newline
-{\bf Notes:}\newline
-{\newpage
 \subsection*{P11.2: DRAGONS - Data Reduction for Astronomy from Gemini Observatory North and South}
 {\bf Theme:}  Quality Assurance of Science Data\newline
 {\bf Author(s):}\newline
@@ -1571,6 +1571,18 @@ Mark Lacy (NRAO) \newline Claire Chandler (NRAO) \newline  Amy Kimball (NRAO)\ne
 \newline\newline
 {\bf Abstract:}\newline
 The VLA Sky Survey (VLASS) is an ambitious project to image the entire sky visible to the VLA in three epochs. The Survey isl being carried out at a frequency of 2-4GHz in full linear polarization (Stokes I,Q,U) and a resolution of 2.5, making it the highest angular resolution all-sky radio survey ever attempted.  VLASS will collect 0.5PB of raw data, and 0.3PB of Basic Data Products (calibration tables, images and catalogs) will be created and archived at NRAO. There are also opportunities for external groups to create higher level Extended Data Products. In this poster, we present a summary of the scheduling, operations, data processing and archiving of the survey, as well as some early results from the first set of observations, covering half the sky.\newline
+{\bf Notes:}\newline
+{\newpage
+\subsection*{P5.10: Optimization Strategies for running Legacy Codes}
+{\bf Theme:}  Science Platforms: Tools for Data Discovery and Analysis from Different Angles\newline
+{\bf Author(s):}\newline
+Jason Lammers (University of Maryland College Park) \newline Dr. Peter Teuben (University of Maryland College Park) \newline   \newline   \newline  \newline  \newline\newline
+{\bf Contact:} {\it jlammers0@gmail.com}\newline
+\newline\newline
+{\bf Abstract:}\newline
+Legacy codes can be both incredibly useful as well as cumbersome.  Although they produce robust results from well-defined problems, they plague the user with complex installations, complicated user interfaces, and inflexibilities.  Short of rewriting such codes, scripts which emulate the effects of legacy codes can lead to tremendous overhead and more headache for the user.  Nonetheless, these legacy codes can provide invaluable insight to a skilled user who takes the time to understand its inner workings.
+
+In this paper, we will showcase examples of the NEMO Stellar Dynamics Toolkit and how analysis simulation codes can be optimized using modern scripting languages.  Not only is it possible, it is relatively easy to speed up computation time and increase user-friendliness by integrating modern scripting languages into codes which would otherwise overwhelm an inexperienced user.\newline
 {\bf Notes:}\newline
 {\newpage
 \subsection*{O12.4: Data-Driven Pixelisation with Voronoi Tessellation}
@@ -1603,18 +1615,6 @@ motion-limited data how it can simplify the survey properties of the
 is imaged by the 60 CCDs at ~10\^5 pointings over 3.5 years.\newline
 {\bf Notes:}\newline
 {\newpage
-\subsection*{P5.10: Optimization Strategies for running Legacy Codes}
-{\bf Theme:}  Science Platforms: Tools for Data Discovery and Analysis from Different Angles\newline
-{\bf Author(s):}\newline
-Jason Lammers (University of Maryland College Park) \newline Dr. Peter Teuben (University of Maryland College Park) \newline   \newline   \newline  \newline  \newline\newline
-{\bf Contact:} {\it jlammers0@gmail.com}\newline
-\newline\newline
-{\bf Abstract:}\newline
-Legacy codes can be both incredibly useful as well as cumbersome.  Although they produce robust results from well-defined problems, they plague the user with complex installations, complicated user interfaces, and inflexibilities.  Short of rewriting such codes, scripts which emulate the effects of legacy codes can lead to tremendous overhead and more headache for the user.  Nonetheless, these legacy codes can provide invaluable insight to a skilled user who takes the time to understand its inner workings.
-
-In this paper, we will showcase examples of the NEMO Stellar Dynamics Toolkit and how analysis simulation codes can be optimized using modern scripting languages.  Not only is it possible, it is relatively easy to speed up computation time and increase user-friendliness by integrating modern scripting languages into codes which would otherwise overwhelm an inexperienced user.\newline
-{\bf Notes:}\newline
-{\newpage
 \subsection*{O11.2: Quality assurance in the ingestion of data into the CDS VizieR catalogue and data services}
 {\bf Theme:}  Quality Assurance of Science Data\newline
 {\bf Author(s):}\newline
@@ -1627,6 +1627,18 @@ Gilles Landais (CDS) \newline Pierre Ocvirk (CDS) \newline  Mark Allen (CDS)\new
 VizieR is a reference service provided by the CDS for astronomical catalogues and tables published in academic journals, and also for associated data. Quality assurance is a key factor that guides the operations, development and maintenance of the data ingestion procedures. 
 The catalogue ingestion pipeline involves a number of validation steps, which must be implemented with high efficiency to process the ~1200 catalogues per year from the major astronomy journals. These processes involve an integrated teams of software engineers, specialised data librarians (documentalists) and astronomers, and various levels of interaction with the original authors and data providers. Procedures for the ingestion of associated data have recently been improved with semi-automatic mapping of metadata into the IVOA ObsCore standard, with an interactive tool to help authors submit their data (images, spectra, time series etc.). 
 We present an overview of the quality assurance procedures in place for the operation of the VizieR pipelines, and identify the future challenges of increasing volumes and complexity of data. We highlight the lessons learned from implementing the FITS metadata mapping tools for authors and data providers. We show how the quality assurance is an essential part of making the VizieR data comply with FAIR (Findable, Accessible, Interoperable and Re-useable) principles, and the necessity of quality assurance in for the operational aspects of supporting more than 300,000 VizieR queries per day through multiple interactive and programmatic interfaces.\newline
+{\bf Notes:}\newline
+{\newpage
+\subsection*{P6.8: Application of Google Cloud Platform in Astrophysics}
+{\bf Theme:}  DevOps Practices in Astronomy Software\newline
+{\bf Author(s):}\newline
+MARCO LANDONI (INAF - Osservatorio Astronomico di Brera) \newline RICCARDO SMAREGLIA (INAF - OSS. ASTRONOMICO TRIESTE) \newline  GIULIANO TAFFONI (INAF - OSS ASTRONOMICO TRIESTE)\newline  ANDREA BIGNAMINI (INAF - OSSERVATORIO ASTRONOMICO TRIESTE)\newline  \newline  \newline\newline
+{\bf Contact:} {\it marco.landoni@inaf.it}\newline
+\newline\newline
+{\bf Abstract:}\newline
+The availability of new Cloud Platform offered by Google motivated us to propose nine Proof of Concepts (PoC) aiming to demonstrated and test the capabilities of the platform in the context of scientifically-driven tasks and requirements.
+In this poster, we review the status of our initiative by illustrating 3 out of 9 successfully closed PoC that we implemented on Google Cloud Platform.
+In particular, we illustrate a cloud architecture for deployment of scientific software as microservice coupling Google Compute Engine with Docker and Pub/Sub to dispatch heavily parallel simulations. We detail also en experiment for HPC based simulation and workflow executions of data reduction pipelines (for the TNG-GIANO-B spectrograph) deployed on GCP. We compare and contrast our experience with on-site facilities comparing advantages and disadvantages both in terms of total cost of ownership and reached performances.\newline
 {\bf Notes:}\newline
 {\newpage
 \subsection*{P10.6: Mapping Data Models to VOTable}
@@ -1721,17 +1733,7 @@ We present an implementation in a tripple store for the provenance information r
 The ontology applied is derived from PROV-O  from the W3C and from the IVOA Provenance data model. SPARQL queries  based on the Data model concepts allow to select datasets based on a wide range of provenance properties and have proven to be efficient in the tripple store representation. The data model of the SIMBAD CDS data base  has also been tested, and has proven to scale very efficiently in the tripplestore strategy as well.\newline
 {\bf Notes:}\newline
 {\newpage
-\subsection*{P12.10: Modeling Narrow Rings with a Single Chain of Gravitating Particles}
-{\bf Theme:}  Algorithms\newline
-{\bf Author(s):}\newline
-Yuxi Lu (University of Maryland College Park) \newline Douglas Hamilton (University of Maryland College Park) \newline   \newline   \newline  \newline  \newline\newline
-{\bf Contact:} {\it lucylulu12311@gmail.com}\newline
-\newline\newline
-{\bf Abstract:}\newline
-Narrow rings have been discovered around Saturn, Uranus and the other gas giants. These structures are hundreds of thousands of km across yet only a few km wide. The most well-known radial confinement theory involves Shepherd moons in which each ring is bracketed by a pair of small satellites. Saturn’s F ring and the Uranian Epsilon ring have exactly such moonlet pairs. In other cases, two body resonances seem to be responsible for sculpting ring edges. However, for the vast majority of rings, neither of these machinists is active. We are investigating the possibility of three-body resonances inducing stability in narrow rings using a N-body code, hnbody. We modified the code to simulate narrow rings using a chain of particles by including the gravity from only the nearest neighboring particles. We study the strengths and limitations of this code by measuring the precession rate for rings modeled with different numbers of particles and/or nearest neighbors. We have developed graphic tools in Python to directly visualize the chain of particles using polar. The FFT is particularly useful for finding weak resonances caused by a distance satellite or the more exotic three-body resonances.\newline
-{\bf Notes:}\newline
-{\newpage
-\subsection*{P9.9: Searching for Optical Counterparts to Gravitational Wave Events with the Catalina Sky Survey}
+\subsection*{P9.3: Searching for Optical Counterparts to Gravitational Wave Events with the Catalina Sky Survey}
 {\bf Theme:}  Multi-Messenger Astronomy\newline
 {\bf Author(s):}\newline
 Michael Lundquist (University of Arizona/Steward Observatory) \newline David Sand (University of Arizona/Steward Observatory) \newline  Eric Christensen (University of Arizona/Lunar \& Planetary Laboratory)\newline   \newline  \newline  \newline\newline
@@ -1751,14 +1753,14 @@ Katharina Lutz (CDS Observatoire astronomique de Strasbourg) \newline Mark Allen
 We present the current status of the EURO-VO tutorials in the light of the upcoming fourth Asterics DADI virtual observatory school.\newline
 {\bf Notes:}\newline
 {\newpage
-\subsection*{P8.4: Insight-HXMT Timing Analysis of New Black Hole Candidate MAXI J1820+070}
-{\bf Theme:}  Time Domain Astronomy\newline
+\subsection*{P12.10: Modeling Narrow Rings with a Single Chain of Gravitating Particles}
+{\bf Theme:}  Algorithms\newline
 {\bf Author(s):}\newline
-Ma Xiang (max@ihep.ac.cn) \newline Qu Jinlu (qujl@ihep.ac.cn) \newline   \newline   \newline  \newline  \newline\newline
-{\bf Contact:} {\it max@ihep.ac.cn}\newline
+Yuxi Lu (University of Maryland College Park) \newline Douglas Hamilton (University of Maryland College Park) \newline   \newline   \newline  \newline  \newline\newline
+{\bf Contact:} {\it lucylulu12311@gmail.com}\newline
 \newline\newline
 {\bf Abstract:}\newline
-We present the Insight-HXMT timing analysis of the new black hole candidate MAXI J1820+070 discovered in March 2018.We find that the source  exhibits state transitions from LHS to HIMS and eventually to SIMS.  Low frequency quasi-periodic oscillations(QPO) is found in the hard state and intermediate states and its centroid frequency increase with time while Q and RMS do not show evolution. With the large effective area of Insight-HXMT at high energy band, we are able to present the energy dependence of the QPO amplitude and centroid frequency up to 200 keV which supplies more constraints on the region of QPO.\newline
+Narrow rings have been discovered around Saturn, Uranus and the other gas giants. These structures are hundreds of thousands of km across yet only a few km wide. The most well-known radial confinement theory involves Shepherd moons in which each ring is bracketed by a pair of small satellites. Saturn’s F ring and the Uranian Epsilon ring have exactly such moonlet pairs. In other cases, two body resonances seem to be responsible for sculpting ring edges. However, for the vast majority of rings, neither of these machinists is active. We are investigating the possibility of three-body resonances inducing stability in narrow rings using a N-body code, hnbody. We modified the code to simulate narrow rings using a chain of particles by including the gravity from only the nearest neighboring particles. We study the strengths and limitations of this code by measuring the precession rate for rings modeled with different numbers of particles and/or nearest neighbors. We have developed graphic tools in Python to directly visualize the chain of particles using polar. The FFT is particularly useful for finding weak resonances caused by a distance satellite or the more exotic three-body resonances.\newline
 {\bf Notes:}\newline
 {\newpage
 \subsection*{P5.11: Arcade: A User Focussed, Visual Compute Environment in CANFAR}
@@ -1787,6 +1789,20 @@ Lead author: María José Márquez
 The observational nature of Science, especially relevant in domains such as Astronomy and Astrophysics sets important challenges in the data analysis domain. Nowadays astronomical surveys yield challenging images with crowded populations, overlapping objects, and faint detections. Here we present a Galaxy Cataloguing Expert System (GCES) to better exploit the knowledge that can be extracted from the surveys. This expert system involves the combination of appropriate AI methodologies, i.e. Bayesian inference, Voronoi tessellation and computer vision all this integrated in an automatic and configurable processing pipeline and requiring intense and intelligent computational capabilities. The GCES system addresses a multiple problem, i.e. i) label sources in an astronomical image according to the probability that each one is blended or contaminated with surrounding sources, using Voronoi tessellation and rule-based system; ii) extract photometric measurements of extended objects using contour-based approaches; and iii) carry out a probabilistic cross-match of sources from different images and bands, using all astro-photometric information available. We demonstrate here the use of the GCES in full with the most representative use cases. When the GCES system is used with the COSMOS catalogue, apparent false detections are re-discovered as real sources. This demonstrates the benefits of using artificial intelligence methodologies in the exploitation of Big Data and the consequent knowledge discovery. The paper is structured as follows: section 1 presents an introduction of the multi-axis problem and its context; section 2 describes the expert data processing and analysis pipeline (GCSE) and its specific use for the problem indicated in section 1; finally section 3 presents relevant results obtained from the different use cases with real COSMOS data sets along with a critical assessment.\newline
 {\bf Notes:}\newline
 {\newpage
+\subsection*{O10.4: Data-driven Space Science at ESA Science Data Centre}
+{\bf Theme:}  Databases and Archives: Challenges and Solutions in the Big Data Era\newline
+{\bf Author(s):}\newline
+Beatriz Martinez (Rhea System S.A. for ESA) \newline Isa Barbarisi (Serco for ESA) \newline  Juan Gonzalez (Serco for ESA)\newline  Bruno Merin (ESDC / ESA)\newline Sara Nieto (Rhea System S.A. for ESA)\newline  Hector Perez Rhea System S.A. for ESA, Jesus Salgado QUASAR for ESA, Pilar de Teodoro Aurora for ESA\newline\newline
+{\bf Time:} Wed 09.00 - 09.15\newline
+\newline
+{\bf Contact:} {\it beatriz.martinez@esa.int}\newline
+\newline\newline
+{\bf Abstract:}\newline
+For many scientists nowadays, the first step in doing science is exploring the data computationally. New approaches to data-driven science are needed due to the big increase of space science mission’s data in volume, heterogeneity, velocity and complexity. This applies to ESA space science missions, whose archives are hosted at the ESA Science Data Centre (ESDC). Some examples are the Gaia archive -whose size is estimated to grow up to 1PB and 6000 billion of objects-, the Solar Orbiter archive -which is expected to handle several time series with more than 500 millions of records- and the Euclid archive, which shall be able to handle up to 10PB of data.
+The ESDC aims, as a major objective, to maximize the scientific exploitation of the archived data. Challenges are not limited to manage the large volume of data, but also to allow collaboration between scientists, to provide tools for exploring and mining the data, to integrate data (the value of data explodes when it can be linked with other data), or to manage data in context (track provenance, handle uncertainty and error).
+ESDC is exploring solutions for handling those challenges in different areas. Specifically: storage of big catalogues through distributed databases (ex. Greenplum, Postgres-XL,…); storage of long time series in high resolution via time series oriented databases (TimeScaleDB); fulfil data analysis requirements via Elasticsearch or Spark/Hadoop; and enabling scientific collaboration and closer access to data via JupyterLab, Python client libraries and integration with pipelines using containers. In this presentation we are going to take a tour of these approaches.\newline
+{\bf Notes:}\newline
+{\newpage
 \subsection*{P1.8: Putting more intelligence into the reduction and analysis of SITELLE data.}
 {\bf Theme:}  Machine Learning in Astronomy\newline
 {\bf Author(s):}\newline
@@ -1805,18 +1821,14 @@ Finally, spectral model fitting can also take advantage of the python library Te
 We will also see more of the marvelous data obtained recently.\newline
 {\bf Notes:}\newline
 {\newpage
-\subsection*{O10.4: Data-driven Space Science at ESA Science Data Centre}
-{\bf Theme:}  Databases and Archives: Challenges and Solutions in the Big Data Era\newline
+\subsection*{P8.4: Insight-HXMT Timing Analysis of New Black Hole Candidate MAXI J1820+070}
+{\bf Theme:}  Time Domain Astronomy\newline
 {\bf Author(s):}\newline
-Beatriz Martinez (Rhea System S.A. for ESA) \newline Isa Barbarisi (Serco for ESA) \newline  Juan Gonzalez (Serco for ESA)\newline  Bruno Merin (ESDC / ESA)\newline Sara Nieto (Rhea System S.A. for ESA)\newline  Hector Perez Rhea System S.A. for ESA, Jesus Salgado QUASAR for ESA, Pilar de Teodoro Aurora for ESA\newline\newline
-{\bf Time:} Wed 09.00 - 09.15\newline
-\newline
-{\bf Contact:} {\it beatriz.martinez@esa.int}\newline
+Ma Xiang (max@ihep.ac.cn) \newline Qu Jinlu (qujl@ihep.ac.cn) \newline   \newline   \newline  \newline  \newline\newline
+{\bf Contact:} {\it max@ihep.ac.cn}\newline
 \newline\newline
 {\bf Abstract:}\newline
-For many scientists nowadays, the first step in doing science is exploring the data computationally. New approaches to data-driven science are needed due to the big increase of space science mission’s data in volume, heterogeneity, velocity and complexity. This applies to ESA space science missions, whose archives are hosted at the ESA Science Data Centre (ESDC). Some examples are the Gaia archive -whose size is estimated to grow up to 1PB and 6000 billion of objects-, the Solar Orbiter archive -which is expected to handle several time series with more than 500 millions of records- and the Euclid archive, which shall be able to handle up to 10PB of data.
-The ESDC aims, as a major objective, to maximize the scientific exploitation of the archived data. Challenges are not limited to manage the large volume of data, but also to allow collaboration between scientists, to provide tools for exploring and mining the data, to integrate data (the value of data explodes when it can be linked with other data), or to manage data in context (track provenance, handle uncertainty and error).
-ESDC is exploring solutions for handling those challenges in different areas. Specifically: storage of big catalogues through distributed databases (ex. Greenplum, Postgres-XL,…); storage of long time series in high resolution via time series oriented databases (TimeScaleDB); fulfil data analysis requirements via Elasticsearch or Spark/Hadoop; and enabling scientific collaboration and closer access to data via JupyterLab, Python client libraries and integration with pipelines using containers. In this presentation we are going to take a tour of these approaches.\newline
+We present the Insight-HXMT timing analysis of the new black hole candidate MAXI J1820+070 discovered in March 2018.We find that the source  exhibits state transitions from LHS to HIMS and eventually to SIMS.  Low frequency quasi-periodic oscillations(QPO) is found in the hard state and intermediate states and its centroid frequency increase with time while Q and RMS do not show evolution. With the large effective area of Insight-HXMT at high energy band, we are able to present the energy dependence of the QPO amplitude and centroid frequency up to 200 keV which supplies more constraints on the region of QPO.\newline
 {\bf Notes:}\newline
 {\newpage
 \subsection*{P1.9: Saving endangered animals with Astro-Ecology}
@@ -2087,6 +2099,16 @@ In 2018, Subaru Telescope Archive System or STARS, which is a part of STN5, has 
 The future goal of STN5 is to allow for Computer \& Data Management Division to be relieved of system and network administration during the 1st year of the contract. Gather necessary resources, manpower, and knowledge, to administer the current contract system.\newline
 {\bf Notes:}\newline
 {\newpage
+\subsection*{P7.5: The Analysis of Periodic Variation of Sunspot Groups and the X-ray Flare Classes}
+{\bf Theme:}  Software for Solar Systems Astronomy\newline
+{\bf Author(s):}\newline
+Oloketuyi Jacob (Yunnan Observatories, Chinese Academy of Sciences, Kunming and UCAS) \newline Liu Yu (Yunnan Observatories, Chinese Academy of Sciences, Kunming) \newline  Zhao Mingyu (Yunnan Observatories, Chinese Academy of Sciences, Kunming)\newline   \newline  \newline  \newline\newline
+{\bf Contact:} {\it jacob.oloketuyi@ynao.ac.cn}\newline
+\newline\newline
+{\bf Abstract:}\newline
+The present solar cycle 24 has been thought to be unusually quiet in many respects. Both sunspot group numbers and flare numbers show a very low level of occurrence compared to the previous cycles. This study investigated the variations and relationship exhibited between the sunspot group numbers and the solar x-ray flares classes (B, C, M and X) in the solar cycles 23 and 24. The Observations of sunspot groups and the solar x-ray flares are archived in the National Oceanic and Atmospheric Administration (NOAA) website. The study was conducted using the continuous wavelet transforms, and the cross-correlation methods. Firstly, we found that the total daily solar flare produced is asynchronous and in antiphase with the sunspot group numbers while it is positively correlated with the sunspot group numbers on cross-correlation analysis. Periodicities of short and intermediate variations were also observed with sunspot group numbers having a significant periodicity around 400 days. The phase asynchrony between the sunspot group numbers and the total flares which is a result of the drop in B and C flares during solar maximum could be attributed to overwhelming of M and X flares produced by magnetic flux system from the active region/sunspot groups.\newline
+{\bf Notes:}\newline
+{\newpage
 \subsection*{O10.5: Bringing together the Australian sky - coordination and interoperability challenges of the All-Sky Virtual Observatory}
 {\bf Theme:}  Databases and Archives: Challenges and Solutions in the Big Data Era\newline
 {\bf Author(s):}\newline
@@ -2099,16 +2121,6 @@ Katrina Sealey (AAO-MQ) \newline Simon O'Toole (AAO-MQ) \newline  Lloyd Harischa
 The Australian All-Sky Virtual Observatory (ASVO) consists currently of 5 nodes. There are 2 nodes with optical astronomical data; Data Central (MQ) and Skymapper (ANU). There are 2 nodes with radio data; Murchison Wide Field Array (MWA, Curtin) and CSIRO ASKAP Science Data Archive (CASDA, CSIRO). The last node is the Theoretical Astrophysical Observatory (TAO, Swin). These 5 nodes work together under the unified ASVO. 
 
 The Australian astronomical user community is driving multi-node and multi-wavelength use cases, for example, querying Data Central spectroscopic data with Skymapper imaging data. Meeting the user requirements of the community comes with complexities and challenges. Some of the challenges we are facing include a single sign-on (unified authorisation/authentication) and the querying and representation of very different remote data, such as, overlaying GaLactic and Extragalactic All-sky MWA Survey (GLEAM) data stored in Western Australia with imaging data stored in Eastern Australian states. This presentation will discuss the challenges and successes in both co-ordinating the Australian ASVO and providing interoperability across the 5 nodes.\newline
-{\bf Notes:}\newline
-{\newpage
-\subsection*{P7.5: The Analysis of Periodic Variation of Sunspot Groups and the X-ray Flare Classes}
-{\bf Theme:}  Software for Solar Systems Astronomy\newline
-{\bf Author(s):}\newline
-Oloketuyi Jacob (Yunnan Observatories, Chinese Academy of Sciences, Kunming and UCAS) \newline Liu Yu (Yunnan Observatories, Chinese Academy of Sciences, Kunming) \newline  Zhao Mingyu (Yunnan Observatories, Chinese Academy of Sciences, Kunming)\newline   \newline  \newline  \newline\newline
-{\bf Contact:} {\it jacob.oloketuyi@ynao.ac.cn}\newline
-\newline\newline
-{\bf Abstract:}\newline
-The present solar cycle 24 has been thought to be unusually quiet in many respects. Both sunspot group numbers and flare numbers show a very low level of occurrence compared to the previous cycles. This study investigated the variations and relationship exhibited between the sunspot group numbers and the solar x-ray flares classes (B, C, M and X) in the solar cycles 23 and 24. The Observations of sunspot groups and the solar x-ray flares are archived in the National Oceanic and Atmospheric Administration (NOAA) website. The study was conducted using the continuous wavelet transforms, and the cross-correlation methods. Firstly, we found that the total daily solar flare produced is asynchronous and in antiphase with the sunspot group numbers while it is positively correlated with the sunspot group numbers on cross-correlation analysis. Periodicities of short and intermediate variations were also observed with sunspot group numbers having a significant periodicity around 400 days. The phase asynchrony between the sunspot group numbers and the total flares which is a result of the drop in B and C flares during solar maximum could be attributed to overwhelming of M and X flares produced by magnetic flux system from the active region/sunspot groups.\newline
 {\bf Notes:}\newline
 {\newpage
 \subsection*{P1.10: Identifying contaminants in astronomical images using convolutional neural networks}
@@ -2981,7 +2993,7 @@ Masayuki Yamaguchi (The University of Tokyo, National Astronomical Observatory o
 High-resolution observations of protoplanetary disks with radio interferometers are crucial for understanding the planet formation process. Recent observations using Atacama Large Millimeter/submillimeter Array (ALMA) have revealed various small-scale structures in disks. In interferometric observations, the observed data are an incomplete set of Fourier components of the radio source image. The image reconstruction is therefore essential in obtaining the images in real space. The CLEAN technique has been widely used, but recently, a new technique using the sparse modeling approach is suggested. This technique directly solves a set of undetermined equations and has been shown to behave better than the CLEAN technique based on mock observations with VLBI (Very Long Baseline Interferometry). However, it has never been applied to ALMA-like connected interferometers nor real observational data. In this work, for the first time, the sparse modeling technique is applied to observational data sets taken by ALMA. We evaluate the performance of the technique by comparing the resulting images with those derived by the CLEAN technique. We use two sets of ALMA archival data at Band 7 (~350GHz) for the protoplanetary disk around HD 142527. One is taken in the intermediate-baseline array configuration, and the other is in the longer-baseline array configuration. The image resolutions reconstructed from these data sets are different by a factor of ~ 3. We compare images reconstructed using sparse modeling and CLEAN. We find that the sparse modeling technique can successfully reconstruct the overall disk emission. The previously known disk structures appear on both images made by the sparse modeling and CLEAN at its nominal resolutions. Remarkably, the image reconstructed from intermediate-baseline data using the sparse-modeling technique matches very well with that obtained from longer-baseline data using the CLEAN technique with the accuracy of ~ 90 \% on the image domain.\newline
 {\bf Notes:}\newline
 {\newpage
-\subsection*{P9.10: aLigo/Virgo Gravitational Wave Electromagnetic Counterparts Host Galaxy Candidates Filtering Pipeline}
+\subsection*{P9.4: aLigo/Virgo Gravitational Wave Electromagnetic Counterparts Host Galaxy Candidates Filtering Pipeline}
 {\bf Theme:}  Multi-Messenger Astronomy\newline
 {\bf Author(s):}\newline
 Xu Yunfei (NAOC) \newline Fan Dongwei (NAOC) \newline  Xu Dong (NAOC)\newline  Cui Chenzhou (NAOC)\newline  \newline  \newline\newline
@@ -3036,18 +3048,6 @@ Zhang Yanxia (National Astronomical Observatories,CAS) \newline Jin Xin (Nationa
 \newline\newline
 {\bf Abstract:}\newline
 With the big data era of astronomy coming, machine learning becomes more popular in various astronomical aspects, for example, classification of celestial objects, physical parameter measurement, rare object detection and so on. Quasar candidate selection belongs to the classification problem. Based on a number of present photometric and spectroscopic sky survey projects, preselecting quasar candidates from galaxies and stars is a hot issue. It is easy to separate quasars and stars from galaxies by morphology while it is difficult to distinguish quasars from stars due to their similar morphology. Nevertheless, researchers have figured out various approaches on quasar candidate selection. We will introduce them in detail.\newline
-{\bf Notes:}\newline
-{\newpage
-\subsection*{P7.2: CCSDSPy - Convenient Decoding of Binary Spacecraft Telemetry}
-{\bf Theme:}  Software for Solar Systems Astronomy\newline
-{\bf Author(s):}\newline
-Daniel da Silva (NASA/GSFC, Trident Vantage Systems, Johns Hokpins University) \newline   \newline   \newline   \newline  \newline  \newline\newline
-{\bf Contact:} {\it dasilva@jhu.edu}\newline
-\newline\newline
-{\bf Abstract:}\newline
-CCSDS is a low-level packet format used by many NASA and ESA missions for low-level telemetry, and often contains tightly packed bits to reduce downlink requirements. CCSDSPy is a python library to ease decoding of CCSDS data for satellite ground systems. The driving need of this library is to ease the management of difficult to decode telemetry containing fields that are not byte-aligned, odd-length, or otherwise annoying.
-
-Poster preview: https://docs.google.com/presentation/d/1Ab3DaM\_UwP4rSL\_lESZCZdHsQmwp-WEPFoek-wFdCW4/edit?usp=sharing\newline
 {\bf Notes:}\newline
 {\newpage
 \end{document}
