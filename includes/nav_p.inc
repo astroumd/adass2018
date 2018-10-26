@@ -1,10 +1,8 @@
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-<a href="../index.html">
-<img src="../images/logo250.png" width="50px" height="50px" alt="Astronomical Data Analysis Systems and Software">
-</a>
         <a class="navbar-brand" href="../index.html">
+<img src="../images/logo250.png" width="50px" height="50px" alt="Astronomical Data Analysis Systems and Software">
 </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -90,8 +88,8 @@
             <li class="nav-item">
               <a class="nav-link" href="/index.html#contact">Contact</a>
             </li>
-            </li>
           </ul>
+              <a class="navbar-brand pl-2" href="https://twitter.com/hashtag/adass2018"><img src="../images/Twitter_Social_Icon_Circle_Color.png" width="30px" max-width="30px" alt="Follow ADASS2018 on Twitter"</> </a>
         </div>
       </div>
     </nav>
