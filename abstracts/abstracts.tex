@@ -15,7 +15,7 @@
               \includegraphics[width=0.3\textwidth]{www/images/logo250.png}
               \end{center}
               \bigskip
-           Generated 2018-11-02T22:07:24.853448\newpage
+           Generated 2018-11-05T10:29:45.837843\newpage
 
 \subsection*{P8.1: A GPU implementation of the harmonic sum algorithm}
 {\bf Theme:}  Time Domain Astronomy\newline
@@ -1451,29 +1451,6 @@ C. Wu, The International Centre for Radio Astronomy Research, The University of 
 We present a prototype for the spectral-line data reduction pipeline based on  the graph-based execution framework DALiuGE, and the CASA single-dish spectral-line package. The pipeline has been designed for the drift-scan mode of FAST multi-beam telescope targeting extra-galactic HI observations.\newline
 {\bf Notes:}\newline
 {\newpage
-\subsection*{P1.6: The construction of a new stellar classification template library for the LAMOST 1D Pipeline based on LAMOST DR5}
-{\bf Theme:}  Machine Learning in Astronomy\newline
-{\bf Author(s):}\newline
-Xiao, Kong (National Astronomical Observatories, Chinese Academy of Sciences) \newline A-li, Luo (National Astronomical Observatories, Chinese Academy of Sciences) \newline   \newline   \newline  \newline  \newline\newline
-{\bf Contact:} {\it kongx@nao.cas.cn}\newline
-\newline\newline
-{\bf Abstract:}\newline
-With the ability of capturing four thousands spectra in one exposure, the Large Sky Area Multi-Object Fiber Spectroscopic Telescope (LAMOST) is a special quasi-meridian reflecting Schmidt telescope located in Xinglong Station of national Astronomical Observatory, China.
-It released the fifth spectral data this year, containing 8,171,443 star, 153,090 galaxy, 51,133 QSO and 642,178 unknown type, all of which are classified by the LAMOST 1D pipeline.
-This pipeline is used for spectral analysis, aiming to determine the spectral type and redshifts of the spectra observed by LAMOST by matching with spectral templates.
-Generally, the performance of the stellar classification greatly depends on the quality of templates.
-In this paper, we construct a new stellar template library, which is supposed to increase the number of types and the accuracy of the classification, for LAMOST based on the data from LAMOST DR5.
-All the 9 million spectra from LAMOST DR5 are participated in this construction experiment and they are gathered in 500 groups using k-means clustering method.
-Those group centers corresponding to spectra less than 1000 are abandoned at first.
-Then the weighted average spectrum (group center) is served as the template spectrum in each group.
-Initially, 417 centers are obtained.
-We visually inspect all template spectra and discard 181 centers due to low spectral quality or the similarity between different group centers.
-Furthermore, the types of the remained clustering centers are assigned by the subclass of spectra from LAMOST DR5.
-Meanwhile, 19 templates whose subclass are difficult to determine are also abandoned.
-Afterwards, we obtain a new template library containing 197 LAMOST template spectra with 82 different MK classes.
-Finally, the feasibility and accuracy of using this template for classification has been verified by comparing and analyzing the classification results of several control groups of data.\newline
-{\bf Notes:}\newline
-{\newpage
 \subsection*{P4.12: Data Processing Challenges for CTA}
 {\bf Theme:}  Data Science: Workflows Hardware Software Humanware\newline
 {\bf Author(s):}\newline
@@ -2873,16 +2850,6 @@ Paul Woods (Nature Research) \newline   \newline   \newline   \newline  \newline
 I briefly summarise the current code and data availability policies that apply to Nature, Nature Astronomy, Nature Geoscience and other Nature journals. Full policies can be found at: https://www.nature.com/authors/policies/availability.html\newline
 {\bf Notes:}\newline
 {\newpage
-\subsection*{P1.18: Research on Automatic Recognition of Radio Frequency Interference Based on Deep Learning}
-{\bf Theme:}  Machine Learning in Astronomy\newline
-{\bf Author(s):}\newline
-Jian Xiao (Tianjin University) \newline Zhicheng Yang (Tianjin University) \newline  Ce Yu (Tianjin University)\newline  Bo Zhang (National Astronomical Observatories, Chinese Academy of Sciences)\newline Min Long (College of Engineering, Boise State University)\newline  \newline\newline
-{\bf Contact:} {\it xiaojian@tju.edu.cn}\newline
-\newline\newline
-{\bf Abstract:}\newline
-Radio frequency interference (RFI) mitigation is a key phase in data pipeline of radio telescopes. Classical RFI mitigation methods depend on the RFI physical characteristics, often fail to recognize some complicated patterns or result in misrecognition. We developed a novel approach of RFI recognition and automatic flagging with an improved convolution neural network. The network was constructed based on U-net with much deeper network structure for more complicated patterns and more components to reduce recognition error caused by over-fitting. Compared to the most widely used classical method -- SumThreshold, our method has better performance on both precision and recall rate, it also outperformed the U-net, a traditional deep learning model, and KNN,a typical machine learning model.\newline
-{\bf Notes:}\newline
-{\newpage
 \subsection*{P13.22: Super-resolution Imaging of the Protoplanetary Disk HD 142527 using Sparse Modeling}
 {\bf Theme:}  Other\newline
 {\bf Author(s):}\newline
@@ -2925,16 +2892,6 @@ We introduce AXS (Astronomy eXtensions for Spark), a scalable open-source astron
 In the age when the most challenging questions of the day demand repeated, complex processing of large information-rich tabular datasets, scalable and stable tools that are easy to use by domain practitioners are crucial. Building on capabilities present in Spark, AXS enables querying and analyzing almost arbitrarily large astronomical catalogs using familiar Python/AstroPy concepts, DataFrame APIs, and SQL statements. AXS supports complex analysis workflows with astronomy-specific operations such as spatial selection or on-line cross-matching. Special attention has been given to usability, from conda packaging to enabling ready-to-use cloud deployments.
 
 AXS is regularly used within the University of Washington's DIRAC Institute, enabling the analysis of ZTF (Zwicky Transient Facility) and other datasets. As an example, AXS is able to cross-match Gaia DR2 (1.8 billion rows) and SDSS (800 million rows) in 2 minutes, with the data of interest (photometry) being passed to Python routines for further processing. Here, we will present current AXS capabilities, give an overview of future plans, and discuss some implications to analysis of LSST and similarly sized datasets. The long-term goal of AXS is to enable petascale catalog and stream analyses by individual researchers and groups.\newline
-{\bf Notes:}\newline
-{\newpage
-\subsection*{P1.19: Machine Learning for Quasar Candidate Selection}
-{\bf Theme:}  Machine Learning in Astronomy\newline
-{\bf Author(s):}\newline
-Zhang Yanxia (National Astronomical Observatories,CAS) \newline Jin Xin (National Astronomical Observatories,CAS) \newline  Zhang Jingyi (National Astronomical Observatories,CAS)\newline  Zhao Yongheng (National Astronomical Observatories,CAS)\newline  \newline  \newline\newline
-{\bf Contact:} {\it zyx@bao.ac.cn}\newline
-\newline\newline
-{\bf Abstract:}\newline
-With the big data era of astronomy coming, machine learning becomes more popular in various astronomical aspects, for example, classification of celestial objects, physical parameter measurement, rare object detection and so on. Quasar candidate selection belongs to the classification problem. Based on a number of present photometric and spectroscopic sky survey projects, preselecting quasar candidates from galaxies and stars is a hot issue. It is easy to separate quasars and stars from galaxies by morphology while it is difficult to distinguish quasars from stars due to their similar morphology. Nevertheless, researchers have figured out various approaches on quasar candidate selection. We will introduce them in detail.\newline
 {\bf Notes:}\newline
 {\newpage
 \end{document}
