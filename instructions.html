@@ -268,11 +268,11 @@ The deadline to submit the final version of your paper is <strong>December 1, 20
 If you do not submit a draft paper by the deadline, your contribution will not be included in the proceedings. 
 </strong>
 </p>
+<p>
+The proceedings editors are Peter Teuben, Marc Pound, Brian Thomas, and Elizabeth Warner.
+</p>
 
-<!--
-<b>Manuscript Submission</b>
--->
-<h5 class="bg-dark text-white">&nbsp;Manuscript Submission</h5>
+<h5 class="bg-dark text-white">&nbsp;Manuscript Preparation</h5>
 <p>
 <a href="ADASSManuscriptInstructions.pdf">Detailed instructions</a> have been created 
 to guide you in writing and submitting a paper for the ADASS XXVIII proceedings.  The <A HREF=ADASS2018.tar>ADASS2018.tar</A>
@@ -281,16 +281,42 @@ check the <A HREF=http://www.adass.org/instructions/ADASS2018.tar>adass.org 2018
 Your submission must include the <a href="ADASSCopyrightForm.pdf">Copyright Form</a> signed manually and scanned.
 This year we have <A href="http://www.astro.umd.edu/~teuben/adass/papers/">(experimental) personalized templates of your paper</A>
 <br>
+<div id="instructions">
 <p>
-As in previous years, you can submit your tar file (see instructions) to <B>ftp.astro.umd.edu</B> in the
-<B>incoming/adass</B> directory. Command line example:<br>
-<pre>
-        ncftpput ftp.astro.umd.edu  incoming/adass  P12-3_v1.tar.gz
-</pre>	
+<b>Please read these instructions before submitting your file.</b>
+<ol>
+<li>Ensure your contribution was prepared using the <a
+href="http://adass2018.umd.edu/instructions.html#proceedings">instructions we have provided</a>.
+We have also made available if you wish to use it, <a
+href="http://www.astro.umd.edu/~teuben/adass/papers/">a pre-filled template of your paper</a> with
+author and abstract filled in.
+</li>
+<li>Ensure your file contains both your LaTeX template and your <i>completed and signed</i>
+<a href="http://adass2018.umd.edu/ADASSCopyrightForm.pdf">copyright form</a></li>
+<li>You will submit one file that must be tar, zip, tgz, or bz2</li>
+<li>Your file must follow the naming convention:<br>
+<br>
+[<i>Contribution Type</i>] [<i>Session Number</i>] dash [<i>Contribution
+Number</i>] underscore [V][<i>version number</i>].[<i>extension</i>]<br>
+<br>
+The contribution types are:
+<ul>
+<li><b>I</b> &ndash; Invited</li>
+<li><b>O</b> &ndash; Oral</li>
+<li><b>P</b> &ndash; Poster</li>
+<li><b>F</b> &ndash; Focus Demo</li>
+<li><b>T</b> &ndash; Tutorial</li>
+<li><b>B</b> &ndash; BoF</li>
+</ul>
+<p> Allowed extensions are tar, tgz, zip, bz2.</p>
+<p>
+For instance, if you have have a poster number identifed as <b>P12.3</b>, this is your first version,
+and you are using zip, your file name would be
+<b>P12-3_V1.zip</b>.  For Focus Demo 3, version 2, tar and gzipped, it would be <b>F3_V1.tgz</b>.
 </p>
-
-Proceedings contributions have the following page limits:
-</p>
+</li>
+<li>If you submit an updated file, you must increase the version number. Overwrites of existing files are not allowed.</li>
+<li>Proceedings contributions have the following page limits:
 <ul>
 <li>Invited Oral Papers: 10 pages </li>
 <li>Contributed Oral Papers: 4 pages </li>
@@ -299,23 +325,56 @@ Proceedings contributions have the following page limits:
 <li>Tutorials: 4 pages </li>
 <li>BoFs: 4 pages</li>
 </ul>
-
+</li>
+</ol>
 <p>
-The proceedings editors are Peter Teuben, Marc Pound, Brian Thomas, and Elizabeth Warner.
+Don't know your Contribution ID? See the <a href="http://adass2018.umd.edu/abstracts/">abstract
+list</a>
 </p>
+</div>
+<h5 class="bg-dark text-white">&nbsp;Manuscript Submission</h5>
+<div id="submission">
+<p>
+There are two methods by which you can submit your file.
+</p>
+<ol>
+<li>FTP to <B>ftp.astro.umd.edu</B> in the
+<B>incoming/adass</B> directory. Command line example:
+<br>
+<br>
+<pre>
+        ncftpput ftp.astro.umd.edu  incoming/adass  P12-3_V1.tgz
+</pre>	
+</li>
+<li>Submission through the form below</a>.</li>
+    <div id="myform" class="border p-4 col-sm-8">
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+        <legend>Manuscript Upload</legend>
+<!-- why doesn't this filestyle thingy work? -->
+            <input class="filestyle" type="file" name="fileToUpload" id="fileToUpload" aria-describedby="filehelp" data-buttonText="Select File" data-buttonName="btn-info">
+            <small id="filehelp" class="form-text text-muted">tar, tgz, bz2, or zip of your manuscript files</small>
+<br>
+            <button type="submit" value="Upload File" class="p-2 btn btn-primary" name="submit">Submit</button>
+        </form>
+        </div>
+    </div>
+</div>
+
+
 </div><!--/.col-->
 </div><!--/.row-->
 </div> <!-- /.proceedings-->
 
 </div> <!-- /.container -->
 
-<!--#include virtual="includes/footer.inc" -->
-
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap-filestyle.min.js"></script>
 
+<!--#include virtual="includes/footer.inc" -->
   </body>
 
 </html>
