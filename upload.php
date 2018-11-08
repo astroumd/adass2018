@@ -13,7 +13,7 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $filebase = strtoupper(pathinfo($target_file,PATHINFO_FILENAME));
-$pattern  = '/^[POIFBTD][1-9][1-9]?-[1-9][1-9]?_[V][1-9]+/';
+$pattern  = '/^[POIFBTD][1-9][1-9]?-?[1-9]?[1-9]?_[V][1-9]+/';
 $pattern_matches = preg_match($pattern,$filebase);
 echo "$header";
 echo "$inc1";
