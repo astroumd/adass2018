@@ -15,7 +15,7 @@
               \includegraphics[width=0.3\textwidth]{www/images/logo250.png}
               \end{center}
               \bigskip
-           Generated 2018-11-07T12:31:55.022870\newpage
+           Generated 2018-11-07T22:31:30.403030\newpage
 
 \subsection*{P8.1: A GPU implementation of the harmonic sum algorithm}
 {\bf Theme:}  Time Domain Astronomy\newline
@@ -1390,6 +1390,29 @@ C. Wu, The International Centre for Radio Astronomy Research, The University of 
 We present a prototype for the spectral-line data reduction pipeline based on  the graph-based execution framework DALiuGE, and the CASA single-dish spectral-line package. The pipeline has been designed for the drift-scan mode of FAST multi-beam telescope targeting extra-galactic HI observations.\newline
 {\bf Notes:}\newline
 {\newpage
+\subsection*{P1.6: The construction of a new stellar classification template library for the LAMOST 1D Pipeline based on LAMOST DR5}
+{\bf Theme:}  Machine Learning in Astronomy\newline
+{\bf Author(s):}\newline
+Xiao, Kong (National Astronomical Observatories, Chinese Academy of Sciences) \newline A-li, Luo (National Astronomical Observatories, Chinese Academy of Sciences) \newline   \newline   \newline  \newline  \newline\newline
+{\bf Contact:} {\it kongx@nao.cas.cn}\newline
+\newline\newline
+{\bf Abstract:}\newline
+With the ability of capturing four thousands spectra in one exposure, the Large Sky Area Multi-Object Fiber Spectroscopic Telescope (LAMOST) is a special quasi-meridian reflecting Schmidt telescope located in Xinglong Station of national Astronomical Observatory, China.
+It released the fifth spectral data this year, containing 8,171,443 star, 153,090 galaxy, 51,133 QSO and 642,178 unknown type, all of which are classified by the LAMOST 1D pipeline.
+This pipeline is used for spectral analysis, aiming to determine the spectral type and redshifts of the spectra observed by LAMOST by matching with spectral templates.
+Generally, the performance of the stellar classification greatly depends on the quality of templates.
+In this paper, we construct a new stellar template library, which is supposed to increase the number of types and the accuracy of the classification, for LAMOST based on the data from LAMOST DR5.
+All the 9 million spectra from LAMOST DR5 are participated in this construction experiment and they are gathered in 500 groups using k-means clustering method.
+Those group centers corresponding to spectra less than 1000 are abandoned at first.
+Then the weighted average spectrum (group center) is served as the template spectrum in each group.
+Initially, 417 centers are obtained.
+We visually inspect all template spectra and discard 181 centers due to low spectral quality or the similarity between different group centers.
+Furthermore, the types of the remained clustering centers are assigned by the subclass of spectra from LAMOST DR5.
+Meanwhile, 19 templates whose subclass are difficult to determine are also abandoned.
+Afterwards, we obtain a new template library containing 197 LAMOST template spectra with 82 different MK classes.
+Finally, the feasibility and accuracy of using this template for classification has been verified by comparing and analyzing the classification results of several control groups of data.\newline
+{\bf Notes:}\newline
+{\newpage
 \subsection*{P4.12: Data Processing Challenges for CTA}
 {\bf Theme:}  Data Science: Workflows Hardware Software Humanware\newline
 {\bf Author(s):}\newline
@@ -1639,34 +1662,6 @@ Beatriz Martinez (Rhea System S.A. for ESA) \newline Isa Barbarisi (Serco for ES
 For many scientists nowadays, the first step in doing science is exploring the data computationally. New approaches to data-driven science are needed due to the big increase of space science mission’s data in volume, heterogeneity, velocity and complexity. This applies to ESA space science missions, whose archives are hosted at the ESA Science Data Centre (ESDC). Some examples are the Gaia archive -whose size is estimated to grow up to 1PB and 6000 billion of objects-, the Solar Orbiter archive -which is expected to handle several time series with more than 500 millions of records- and the Euclid archive, which shall be able to handle up to 10PB of data.
 The ESDC aims, as a major objective, to maximize the scientific exploitation of the archived data. Challenges are not limited to manage the large volume of data, but also to allow collaboration between scientists, to provide tools for exploring and mining the data, to integrate data (the value of data explodes when it can be linked with other data), or to manage data in context (track provenance, handle uncertainty and error).
 ESDC is exploring solutions for handling those challenges in different areas. Specifically: storage of big catalogues through distributed databases (ex. Greenplum, Postgres-XL,…); storage of long time series in high resolution via time series oriented databases (TimeScaleDB); fulfil data analysis requirements via Elasticsearch or Spark/Hadoop; and enabling scientific collaboration and closer access to data via JupyterLab, Python client libraries and integration with pipelines using containers. In this presentation we are going to take a tour of these approaches.\newline
-{\bf Notes:}\newline
-{\newpage
-\subsection*{P1.8: Putting more intelligence into the reduction and analysis of SITELLE data.}
-{\bf Theme:}  Machine Learning in Astronomy\newline
-{\bf Author(s):}\newline
-Thomas Martin (Université Laval) \newline Laurent Drissen (Université Laval) \newline   \newline   \newline  \newline  \newline\newline
-{\bf Contact:} {\it thomas.martin.1@ulaval.ca}\newline
-\newline\newline
-{\bf Abstract:}\newline
-SITELLE is the imaging Fourier transform spectrometer of the Canada-France-Hawaii Telescope (CFHT). It delivers cubes of 4 million spectra at moderate resolution (R~3000 - 10000) on a 11'x11' FOV with a spatial resolution of 0.32. 
-
-Each data cube contains up to 34 Go of data and a handful of different astrophysical objects which cannot all be detected easily (especially at low signal-to-noise ratio) : high-redshift galaxies, planetary nebulae, emission-line stars, compact hii regions, etc. Object detection and classification is a challenge. We have developed tools based on convolutional neural networks that greatly help reasearcher to quickly find the most hidden objects.
-
-Data reduction have also been enhanced with deep neural networks for cosmic ray detection and stars detection.
-
-Finally, spectral model fitting can also take advantage of the python library Tensor Flow which provides GPU optimized minimization algorithm.
-
-We will also see more of the marvelous data obtained recently.\newline
-{\bf Notes:}\newline
-{\newpage
-\subsection*{P8.4: Insight-HXMT Timing Analysis of New Black Hole Candidate MAXI J1820+070}
-{\bf Theme:}  Time Domain Astronomy\newline
-{\bf Author(s):}\newline
-Ma Xiang (max@ihep.ac.cn) \newline Qu Jinlu (qujl@ihep.ac.cn) \newline   \newline   \newline  \newline  \newline\newline
-{\bf Contact:} {\it max@ihep.ac.cn}\newline
-\newline\newline
-{\bf Abstract:}\newline
-We present the Insight-HXMT timing analysis of the new black hole candidate MAXI J1820+070 discovered in March 2018.We find that the source  exhibits state transitions from LHS to HIMS and eventually to SIMS.  Low frequency quasi-periodic oscillations(QPO) is found in the hard state and intermediate states and its centroid frequency increase with time while Q and RMS do not show evolution. With the large effective area of Insight-HXMT at high energy band, we are able to present the energy dependence of the QPO amplitude and centroid frequency up to 200 keV which supplies more constraints on the region of QPO.\newline
 {\bf Notes:}\newline
 {\newpage
 \subsection*{P1.9: Saving endangered animals with Astro-Ecology}
