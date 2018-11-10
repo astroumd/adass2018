@@ -46,6 +46,7 @@ Tim Jenness (LSST/AURA) <br> Jim Bosch (Princeton) <br>  Pim Schellart (Princeto
 Writing generic data processing pipelines requires that the algorithmic code does not ever have to know about data formats of files, or the locations of those files.  At LSST we have a software system known as the Butler, that abstracts these details from the software developer.  Scientists can specify the dataset they want in terms they understand, such as filter, observation id, date of observation, and instrument name, and the butler translates that to one or more files which are read and returned to them as a single Python object. Conversely, once they have finished processing the dataset they can give it back to the butler, with a label describing its new status, and the butler can write it in whatever format it has been configured to use.
 
 The butler system is not LSST-specific and is entirely driven by external configuration to suit a specific use case. In this poster we describe the core features of the butler and the associated architecture.</p>
+Link to PDF (may not be available yet): <A HREF=P13-7.pdf>P13-7.pdf</A>
 </div><!-- id -->
 <!--#include virtual="/includes/footer.inc" -->
 
