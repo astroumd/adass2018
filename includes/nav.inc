@@ -32,6 +32,7 @@
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLogistics">
                 <a class="dropdown-item" href="index.html#venue">Venue</a>
                 <a class="dropdown-item" href="index.html#travel">Travel</a>
+                <a class="dropdown-item" href="ADASSIVOArestaurants.html">Restaurants</a>
                 <a class="dropdown-item" href="local.html">Local Attractions</a>
                 <a class="dropdown-item" href="http://goo.gl/hsYxNh">Hotel Room Sharing</a>
                 <a class="dropdown-item" href="childcare.html">Child Care</a>
