@@ -1,3 +1,47 @@
-Seom statistics on the ADASS 2018 conference:
+Some statistics on the ADASS 2018 conference:
+---------------------------------------------
+
+Registrations
+-------------
+Original:                  3xx   
+Paid:                      281     $550/$650/$700 (this includes students)
+Students:                   30     $200/$250/$300
+Invited:                    13
+Tutorial-only:               1     $50
+One-day:                     3     $200
+Volunteer Students          14     4 of these were "paid" students
+
+Total number:              291     minus those who didn't show up after all
 
 
+
+
+
+
+Hotel:
+
+
+Internet Usage:
+
+
+Presentations:
+ 13 invited talks
+ 34 contributed talks     (originally 35, we lost 1)
+131 posters               (originally 13x, we lost some)
+  5 focus demos
+ 11 demo booths           (this includes the ADASS 2019 booth)
+  7 BoF's
+  7 Hackathon Teams
+
+  
+
+Taylor Bartlow
+Lucia Perez
+Jegug Ih
+Dmitriy Yarunin
+Evan Davis
+Charlotte Ward
+Miguel
+Blake Hartley
+Liz Tarantino
+Naylynn Tanon Reyes
