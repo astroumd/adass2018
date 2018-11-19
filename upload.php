@@ -30,8 +30,8 @@ if (file_exists($target_file)) {
     $uploadOk = 0;
 }
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 50000000) {
-    echo "Your file is too large. Files must be less than 50MB.<br>";
+if ($_FILES["fileToUpload"]["size"] > 150000000) {
+    echo "Your file is too large. Uploaded files must be less than 150MB. If you cannot shrink your file, please submit via ftp<br>";
     $uploadOk = 0;
 }
 // Allow certain file formats
