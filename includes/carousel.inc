@@ -9,7 +9,8 @@
           <li data-target="#carouselIndicators" data-slide-to="3"></li>
           <li data-target="#carouselIndicators" data-slide-to="4"></li>
           <li data-target="#carouselIndicators" data-slide-to="5"></li>	  
-          <li data-target="#carouselIndicators" data-slide-to="6"></li>	  
+          <li data-target="#carouselIndicators" data-slide-to="6"></li>
+	  <li data-target="#carouselIndicators" data-slide-to="7"></li>	  
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide 1 - Set the background image for this slide in the line below -->
@@ -39,6 +40,10 @@
           <!-- Slide 7 - Set the background image for this slide in the line below -->
           <div class="carousel-item img-fluid">
             <img src="images/AstroBarn.jpg" style="max-width:100%; height:auto; margin-top:15px;">
+          </div>
+          <!-- Slide 8 - Set the background image for this slide in the line below -->
+          <div class="carousel-item img-fluid">
+            <img src="images/participants.jpg" style="max-width:100%; height:auto; margin-top:15px;">
           </div>
         </div><!--/.carousel-inner-->
 
