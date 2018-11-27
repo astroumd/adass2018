@@ -19,10 +19,10 @@ echo "$header";
 echo "$inc1";
 echo "$div1";
 //echo "<h1>Found contribution file type " . $fileType . " </h1>";
-if ( !$pattern_matches ) {
-    echo "Your file root name $filebase does not match the required pattern. Please review the instructions and rename your file.<br>";
-    $uploadOk = 0;
-}
+//if ( !$pattern_matches ) {
+//    echo "Your file root name $filebase does not match the required pattern. Please review the instructions and rename your file.<br>";
+//    $uploadOk = 0;
+//}
 
 // Check if file already exists
 if (file_exists($target_file)) {
