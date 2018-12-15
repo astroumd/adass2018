@@ -3,18 +3,32 @@ Some statistics on the ADASS 2018 conference:
 
 Registrations
 -------------
-Original:                  3xx   
-Paid:                      281     $550/$650/$700 (this includes students)
-Students:                   30     $200/$250/$300
-Invited:                    13
+Original:                  341     everybody once on the registration list
+Cancelled:                  57     amongst were 18/24 chinese visa declined
+Noshows-unpaid:              7     never replied to email
+Noshows-paid:                1
+
+Registered:                277     (this includes the dean and 1 tutorial-only)
+Students:                   30     11% were students
+Invited speakers:           13     paid by ADASS, this includes the dean
+UMD financial aid:           4     paid by Dean (they also volunteered)
+Students financial aid:      7     paid by ADASS
+Regular financial aid:       2     paid by ADASS
 Tutorial-only:               1     $50
 One-day:                     3     $200
-Volunteer Students          14     4 of these were "paid" students
+Volunteer UMD Students:     10     
+Registered & paid:         251
+Proceedings buy:            16     money goes to ADASS.org
 
-Total number:              291     minus those who didn't show up after all
+
+Total number:              287     paid + volunteers
 
 
-
+Financial Aid:
+Invited speakers            11     1 paid, dean is free
+UMD students                 4
+full                         2
+students                     7
 
 
 
@@ -27,14 +41,15 @@ Internet Usage:
 Presentations:
  13 invited talks
  34 contributed talks     (originally 35, we lost 1)
-131 posters               (originally 13x, we lost some)
+12x posters               (originally 13x, we lost some)
   5 focus demos
  11 demo booths           (this includes the ADASS 2019 booth)
   7 BoF's
   7 Hackathon Teams
 
   
-
+Volunteers (the 10 that didn't present)
+---------------------------------------
 Taylor Bartlow
 Lucia Perez
 Jegug Ih
@@ -44,4 +59,4 @@ Charlotte Ward
 Miguel
 Blake Hartley
 Liz Tarantino
-Naylynn Tanon Reyes
+Naylynn Tanon Reyes (NASA/UMD)
